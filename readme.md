@@ -29,6 +29,8 @@ You will have to overwrite the dotfiles-private flake with your own. A minimalis
 ```
 
 ### nixos
+*Root will need to be able to login to private repos.*
+
 ```sh
 sudo ln -s <path/to>/dotfiles /etc/nixos 
 sudo nix run nixpkgs#sbctl create-keys
