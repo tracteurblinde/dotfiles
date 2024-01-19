@@ -6,8 +6,9 @@
     # Nixpkgs
     ##
     # 🎶I'm an unstable girl in an unstable world🎶
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    #nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
+    nixos-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
     systems.url = "github:nix-systems/default-linux";
 
     ##
@@ -16,7 +17,7 @@
     dotfiles-utils.url = "git+ssh://tracteur-lab/tracteur/dotfiles-utils";
     dotfiles-private = {
       url = "git+ssh://tracteur-lab/tracteur/dotfiles-private";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
       inputs.dotfiles-utils.follows = "dotfiles-utils";
     };
 
@@ -37,7 +38,7 @@
     # Used for Secure Boot
     lanzaboote = {
       url = "github:nix-community/lanzaboote";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixos-unstable";
       inputs.flake-utils.follows = "flake-utils";
     };
 
@@ -46,28 +47,28 @@
     ##
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
       inputs.systems.follows = "systems";
     };
     xdg-desktop-portal-hyprland = {
       url = "github:hyprwm/xdg-desktop-portal-hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
       inputs.systems.follows = "systems";
       inputs.hyprland-protocols.follows = "hyprland/hyprland-protocols";
       inputs.hyprlang.follows = "hyprland/xdph/hyprlang";
     };
   };
-  outputs = inputs@{ ... }:
+  outputs = inputs@{ nixos-unstable, nixpkgs-unstable, ... }:
     let
-      nixos-config = import ./nixos inputs;
+      nixos-config = import ./nixos (inputs // { nixpkgs = nixos-unstable;});
       inherit (nixos-config) generateNixOSConfigs;
 
-      home-config = import ./home inputs;
+      home-config = import ./home (inputs // { nixpkgs = nixpkgs-unstable;});
       inherit (home-config) generateHomeManagerConfigs;
     in
     {
