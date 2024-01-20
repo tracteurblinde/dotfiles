@@ -19,6 +19,9 @@
         "markdown" = true;
         "scminput" = false;
       };
+      "[typescript]" = {
+        "editor.defaultFormatter" = "xaver.clang-format";
+      };
     };
 
     extensions = with pkgs.vscode-extensions; [
