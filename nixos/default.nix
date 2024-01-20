@@ -20,10 +20,11 @@ let
 in
 {
   generateNixOSConfigs = builtins.listToAttrs (
-    builtins.map (host: {
-      name = host;
-      value = mkOSConfig host;
-    })
-    hosts
+    builtins.map
+      (host: {
+        name = host;
+        value = mkOSConfig host;
+      })
+      hosts
   );
 }

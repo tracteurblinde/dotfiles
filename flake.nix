@@ -65,10 +65,10 @@
   };
   outputs = inputs@{ nixos-unstable, nixpkgs-unstable, ... }:
     let
-      nixos-config = import ./nixos (inputs // { nixpkgs = nixos-unstable;});
+      nixos-config = import ./nixos (inputs // { nixpkgs = nixos-unstable; });
       inherit (nixos-config) generateNixOSConfigs;
 
-      home-config = import ./home (inputs // { nixpkgs = nixpkgs-unstable;});
+      home-config = import ./home (inputs // { nixpkgs = nixpkgs-unstable; });
       inherit (home-config) generateHomeManagerConfigs;
     in
     {
