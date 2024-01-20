@@ -50,6 +50,7 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
 - Librewolf
   - Themed using firefox color: https://github.com/catppuccin/firefox
   - Sites themed using Stylus: https://github.com/catppuccin/userstyles/tree/main
+    - Edit stylus config to add custom Forgejo (Codeberg), Mastodon, and SearxNG domains.
   - Anything else themed with Dark Reader: https://github.com/catppuccin/dark-reader
     - Don't download anything, use the instructions to enable the built-in catppuccin theme since that's mocha
     - Then set Dark Reader to detect dark themes.
