@@ -21,6 +21,9 @@
     intel-compute-runtime
     intel-media-driver
   ];
+  hardware.opengl.extraPackages32 = with pkgs; [
+    driversi686Linux.amdvlk
+  ];
   environment.variables.AMD_VULKAN_ICD = "RADV";
 
   environment.systemPackages = with pkgs; [
