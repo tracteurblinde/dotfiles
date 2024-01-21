@@ -5,9 +5,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # AMD Drivers
-  boot.initrd.kernelModules = [ "i915" ];
-  services.xserver.videoDrivers = [ "amdgpu" ];
+  # AMD Discrete and Intel Integrated Graphics
+  # The order matters. This configuration seems to be the most stable.
+  boot.initrd.kernelModules = [ "i915" "amdgpu" ];
+  services.xserver.videoDrivers = [ "amdgpu" "i915" ];
 
   networking.hostName = "spartanfall";
 
