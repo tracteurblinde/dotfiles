@@ -30,9 +30,6 @@ in
   ];
 
   home.packages = with pkgs; [
-    fastfetch
-    #friture
-    libsForQt5.kalk
     (aspellWithDicts (dicts: [
       dicts.en
       dicts.fr
@@ -40,15 +37,40 @@ in
       dicts.en-science
     ]))
 
+    # Terminal
+    eza
+    fastfetch
+    kitty
+    kitty-themes
+
+    # Productivity Suite
+    libreoffice
     krita
     tenacity
+    trilium-desktop-beta
     filezilla
-    libreoffice
 
+    # Chat
+    chatterino2
+    element-desktop
+    fluffychat
+    vesktop
+
+    # Media
+    mpv
+    plex-media-player
+    streamlink
+    tidal-hifi
+
+    #Gaming
+    parsec-bin
+    path-of-building
+    prismlauncher
+
+    # Development GUI
     gitkraken
 
-    trilium-desktop-beta
-
+    # Development CLI
     (lib.hiPrio clang)
     clang-tools
     binutils
@@ -58,30 +80,8 @@ in
     ninja
     rustup
 
-    fluffychat
-    element-desktop
-
-    discord
-    vesktop
-
-    chatterino2
-    parsec-bin
-
-    plex-media-player
-    tidal-hifi
-    mpv
-    streamlink
-
-    prismlauncher
-    path-of-building
-
-    kitty
-    kitty-themes
-
-    kate
-
-    tmux
-    eza
+    # Other
+    friture
   ];
 
   home.file = {
