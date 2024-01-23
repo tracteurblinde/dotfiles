@@ -12,13 +12,39 @@ You will have to overwrite the dotfiles-private flake with your own. A minimalis
 ```nix
 {
   description = "Private dotfiles";
-  inputs = {};
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    dotfiles-utils = {
+      url = "github:tracteurblinde/dotfiles-utils";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
   outputs = { ... } :
+  let
+    pkgs = import <nixpkgs> {};
   {
     users = {
-      "<user"> = {
-        home.user = "<user>";
-        home.homeDirectory = "/home/<user>";
+      "<userA>" = {
+        nixosConfig = {
+          isNormalUser = true;
+          description = "<Display Name>";
+          extraGroups = [ "networkmanager" "video" "audio" "wheel" ];
+        };
+        homeConfig = {
+          home.username = "<username>";
+          home.homeDirectory = "/home/<username>";
+        };
+      };
+      # Or use dotfiles-utils.generateUser which will also initialize git
+      #   and setup your account picture and desktop background.
+      "<userB"> = dotfiles-utils.generateUser rec {
+        inherit pkgs;
+        name = "<Display Name>";
+        username = "<username>";
+        email = "<email>";
+        groups = [ "wheel" ];
+        face = ./face.png;
+        background = ./background.png;
       };
     };
     hardware = {
