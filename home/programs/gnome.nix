@@ -75,6 +75,9 @@ in
       "document-font-name" = "IBM Plex Sans weight=450 11";
       "monospace-font-name" = "Monaspace Neon 10";
     };
+    "org/gnome/desktop/notifications" = {
+      "show-in-lock-screen" = false;
+    };
     "org/gnome/mutter" = {
       "edge-tiling" = true;
     };
