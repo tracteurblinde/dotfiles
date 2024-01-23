@@ -77,9 +77,10 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
   - Themed using firefox color: https://github.com/catppuccin/firefox
   - Sites themed using Stylus: https://github.com/catppuccin/userstyles/tree/main
     - Edit stylus config to add custom Forgejo (Codeberg), Mastodon, and SearxNG domains.
-    - Since Librewolf will lightmode everything, for some sites you use you will need to either need to set your theme to dark mode in the site's settings or you need set mocha as the light theme. For our uses:
+    - Since Librewolf will lightmode everything, for some sites you use you will need to either need to set your theme to dark mode in the site's settings or you need set mocha as the light theme. In either case, you should use the Stylus settings to set the accent color to Lavender. For our uses, I recommend making changes to the settings for:
       - Codeberg
       - Github
+      - Mastodon
       - NixOS Search
       - NixOS Wiki
       - Proton
