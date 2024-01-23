@@ -6,22 +6,22 @@
     # package = pkgs.vscodium;
 
     userSettings = {
-      "terminal.integrated.defaultProfile.linux" = "zsh";
-      "git.autofetch" = true;
-      "git.confirmSync" = false;
-      "workbench.colorTheme" = "Catppuccin Mocha";
-      "workbench.iconTheme" = "catppuccin-mocha";
+      "[typescript]" = {
+        "editor.defaultFormatter" = "xaver.clang-format";
+      };
       "catppuccin.accentColor" = "lavender";
       "diffEditor.ignoreTrimWhitespace" = false;
+      "git.autofetch" = true;
+      "git.confirmSync" = false;
       "github.copilot.enable" = {
         "*" = true;
         "plaintext" = false;
         "markdown" = true;
         "scminput" = false;
       };
-      "[typescript]" = {
-        "editor.defaultFormatter" = "xaver.clang-format";
-      };
+      "terminal.integrated.defaultProfile.linux" = "zsh";
+      "workbench.colorTheme" = "Catppuccin Mocha";
+      "workbench.iconTheme" = "catppuccin-mocha";
     };
 
     extensions = with pkgs.vscode-extensions; [
