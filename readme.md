@@ -114,4 +114,6 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
   - Spartanfall and Aurora need different configs
   - ~~Aurora might be configurable with `services.barrier.client = { enable = true; server = 'spartanfall'; };`~~
   - input-leap doesn't have a home-manager config + we moved it to the nixos side for firewall reasons
+- [ ] Fluent Reader
+  - This requires manual service configuration at the moment
   

@@ -45,6 +45,7 @@ in
 
     # Productivity Suite
     libreoffice
+    fluent-reader
     krita
     tenacity
     trilium-desktop-beta
