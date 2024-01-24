@@ -1,7 +1,13 @@
 { inputs, lib, pkgs, ... }:
 let
   # Pending v0.63.1 beta release: https://github.com/zadam/trilium/releases
-  trilium-desktop-beta = pkgs.callPackage ./pkgs/trilium-desktop-beta.nix { };
+  trilium-desktop-beta = pkgs.trilium-desktop.overrideAttrs (oldAttrs: rec {
+    version = "0.63.1-beta";
+    src = pkgs.fetchurl {
+      url = "https://github.com/zadam/trilium/releases/download/v${version}/trilium-linux-x64-${version}.tar.xz";
+      sha256 = "0v5vwr8s11pq0dz35mwgydncf05wc07psg506q61z2fq9i99kkg2";
+    };
+  });
 in
 {
   imports = [
