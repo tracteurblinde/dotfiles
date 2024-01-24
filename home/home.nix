@@ -48,6 +48,7 @@ in
     fastfetch
     kitty
     kitty-themes
+    tmux
 
     # Productivity Suite
     libreoffice
