@@ -6,11 +6,9 @@
     # package = pkgs.vscodium;
 
     userSettings = {
-      "[typescript]" = {
-        "editor.defaultFormatter" = "xaver.clang-format";
-      };
       "catppuccin.accentColor" = "lavender";
       "diffEditor.ignoreTrimWhitespace" = false;
+      "editor.formatOnSave" = true;
       "git.autofetch" = true;
       "git.confirmSync" = false;
       "github.copilot.enable" = {
