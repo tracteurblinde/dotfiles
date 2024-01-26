@@ -17,15 +17,6 @@
     };
   };
 
-  networking = {
-    networkmanager.enable = true;
-
-    extraHosts = ''
-      192.168.86.36  elisine
-      192.168.86.227 nacrine
-    '';
-  };
-
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
@@ -188,25 +179,29 @@
     portalPackage = inputs.xdg-desktop-portal-hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
   };
 
-  networking.firewall = {
-    # if packets are still dropped, they will show up in dmesg
-    logReversePathDrops = true;
-    # wireguard trips rpfilter up
-    extraCommands = ''
-      ip46tables -t mangle -I nixos-fw-rpfilter -p udp -m udp --sport 22716 -j RETURN
-      ip46tables -t mangle -I nixos-fw-rpfilter -p udp -m udp --dport 22716 -j RETURN
-    '';
-    extraStopCommands = ''
-      ip46tables -t mangle -D nixos-fw-rpfilter -p udp -m udp --sport 22716 -j RETURN || true
-      ip46tables -t mangle -D nixos-fw-rpfilter -p udp -m udp --dport 22716 -j RETURN || true
-    '';
+  networking = {
+    networkmanager.enable = true;
 
-    allowedTCPPortRanges = [
-      { from = 1714; to = 1764; } # KDE Connect / GSConnect
-    ];
-    allowedUDPPortRanges = [
-      { from = 1714; to = 1764; } # KDE Connect / GSConnect
-    ];
+    firewall = {
+      # if packets are still dropped, they will show up in dmesg
+      logReversePathDrops = true;
+      # wireguard trips rpfilter up
+      extraCommands = ''
+        ip46tables -t mangle -I nixos-fw-rpfilter -p udp -m udp --sport 22716 -j RETURN
+        ip46tables -t mangle -I nixos-fw-rpfilter -p udp -m udp --dport 22716 -j RETURN
+      '';
+      extraStopCommands = ''
+        ip46tables -t mangle -D nixos-fw-rpfilter -p udp -m udp --sport 22716 -j RETURN || true
+        ip46tables -t mangle -D nixos-fw-rpfilter -p udp -m udp --dport 22716 -j RETURN || true
+      '';
+
+      allowedTCPPortRanges = [
+        { from = 1714; to = 1764; } # KDE Connect / GSConnect
+      ];
+      allowedUDPPortRanges = [
+        { from = 1714; to = 1764; } # KDE Connect / GSConnect
+      ];
+    };
   };
 
   # Some programs need SUID wrappers, can be configured further or are

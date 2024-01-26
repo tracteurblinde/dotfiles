@@ -12,6 +12,7 @@ let
 
       modules = [
         user_module.homeConfig
+        dotfiles-private.homeCommon
         ./hosts/${host}.nix
         ./home.nix
         dotfiles-utils.unfreeMerger

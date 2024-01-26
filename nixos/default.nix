@@ -7,6 +7,7 @@ let
       ./users.nix
       ./hosts/${host}.nix
       dotfiles-private.hardware.${host}
+      dotfiles-private.nixosCommon
 
       lanzaboote.nixosModules.lanzaboote
       dotfiles-utils.unfreeMerger

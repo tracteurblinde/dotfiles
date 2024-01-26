@@ -53,6 +53,8 @@ The dotfiles-private flake separates out the private configuration from the publ
     hardware = {
       "<host>" = import ./hardware_configuration.nix;
     }
+    homeCommon = {};
+    nixosCommon = {};
   };
 }
 ```
