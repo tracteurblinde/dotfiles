@@ -85,11 +85,14 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
     - Since Librewolf will lightmode everything, some sites will require dark mode configured in the site's settings. Alternatively, the stylus settings for that site/theme can be used to set `mocha` as the light theme. In either case, Stylus settings should be modified to set `lavender` as the accent color. Suggested sites:
       - Codeberg
       - Github
+      - Gmail / Google
       - Mastodon
+      - Nitter
       - NixOS Search
       - NixOS Wiki
       - Proton
       - SearXNG
+      - Twitch
       - YouTube
   - Anything else themed with Dark Reader: https://github.com/catppuccin/dark-reader
     - Don't download anything, use the instructions to enable the built-in catppuccin theme since that's mocha
