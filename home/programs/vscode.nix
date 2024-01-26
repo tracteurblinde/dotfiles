@@ -7,6 +7,7 @@
 
     userSettings = {
       "catppuccin.accentColor" = "lavender";
+      "cSpell.enableFiletypes" = [ "nix" ];
       "diffEditor.ignoreTrimWhitespace" = false;
       "editor.formatOnSave" = true;
       "git.autofetch" = true;
