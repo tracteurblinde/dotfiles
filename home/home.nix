@@ -74,6 +74,7 @@ in
     parsec-bin
     path-of-building
     prismlauncher
+    protonup-qt
 
     # Development GUI
     gitkraken

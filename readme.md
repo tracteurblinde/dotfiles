@@ -101,6 +101,8 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
     - Then set Dark Reader to detect dark themes.
 - Vesktop: https://catppuccin.github.io/discord/dist/catppuccin-mocha-lavender.theme.css
 
+### Manual Configuration
+- Use `protonup-qt` to configure Proton-GE with Steam.
 
 ## Convenience scripts
 ```sh
