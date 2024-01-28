@@ -109,6 +109,9 @@ in
     PATH = "$HOME/.config/zsh/scripts:$HOME/.cargo/bin:$PATH";
     TERM = "xterm-256color";
 
+    # Enable mangohud everywhere
+    MANGOHUD = "1";
+
     # WA for missing window decorations in kitty under gnome
     #   https://github.com/kovidgoyal/kitty/issues/1645
     KITTY_DISABLE_WAYLAND = "1";
