@@ -15,7 +15,7 @@
   # Xbox One Controller
   hardware.xone.enable = true;
 
-  nixpkgs.allowUnfreePackages = [ 
+  nixpkgs.allowUnfreePackages = [
     "xow_dongle-firmware"
   ];
 
