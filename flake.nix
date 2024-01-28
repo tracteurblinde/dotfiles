@@ -50,18 +50,18 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    hyprland = {
-      url = "github:hyprwm/Hyprland";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-      inputs.systems.follows = "systems";
-    };
-    xdg-desktop-portal-hyprland = {
-      url = "github:hyprwm/xdg-desktop-portal-hyprland";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-      inputs.systems.follows = "systems";
-      inputs.hyprland-protocols.follows = "hyprland/hyprland-protocols";
-      inputs.hyprlang.follows = "hyprland/xdph/hyprlang";
-    };
+    # hyprland = {
+    #   url = "github:hyprwm/Hyprland";
+    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
+    #   inputs.systems.follows = "systems";
+    # };
+    # xdg-desktop-portal-hyprland = {
+    #   url = "github:hyprwm/xdg-desktop-portal-hyprland";
+    #   inputs.nixpkgs.follows = "nixpkgs-unstable";
+    #   inputs.systems.follows = "systems";
+    #   inputs.hyprland-protocols.follows = "hyprland/hyprland-protocols";
+    #   inputs.hyprlang.follows = "hyprland/xdph/hyprlang";
+    # };
   };
   outputs = inputs@{ nixos-unstable, nixpkgs-unstable, ... }:
     let
