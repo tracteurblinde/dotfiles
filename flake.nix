@@ -82,7 +82,7 @@
       # Home Manager
       ##
       # `home-manager switch --flake .#<user>@<host>`
-      # Configurations get generated programatically from
+      # Configurations get generated programmatically from
       #  dotfiles-private.users and ./home-manager/hosts
       homeConfigurations = generateHomeManagerConfigs;
     };
