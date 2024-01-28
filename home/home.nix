@@ -71,6 +71,7 @@ in
     tidal-hifi
 
     #Gaming
+    goverlay # GUI for configuring mangohud
     mangohud
     parsec-bin
     path-of-building
