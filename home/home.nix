@@ -11,6 +11,7 @@ let
 in
 {
   imports = [
+    ./programs/fish.nix
     ./programs/gnome.nix
     #./programs/hyprland.nix
     ./programs/vscode.nix
@@ -119,8 +120,9 @@ in
 
   programs.atuin = {
     enable = true;
-    enableZshIntegration = true;
     enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableZshIntegration = true;
     settings = {
       auto_sync = true;
       sync_frequency = "5m";
@@ -140,8 +142,12 @@ in
   programs.kitty = {
     enable = true;
     theme = "Catppuccin-Mocha";
-    shellIntegration.enableZshIntegration = true;
-    shellIntegration.enableBashIntegration = true;
+    font.name = "MonaspiceXe Nerd Font Mono";
+    shellIntegration = {
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      enableZshIntegration = true;
+    };
     settings = {
       tab_bar_min_tabs = 1;
       tab_bar_edge = "bottom";
