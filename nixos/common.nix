@@ -128,6 +128,7 @@
         pango
       ];
     })
+    protontricks
 
     ibm-plex
     intel-one-mono
