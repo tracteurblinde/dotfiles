@@ -130,10 +130,7 @@
     })
     protontricks
 
-    ibm-plex
-    intel-one-mono
     nerdfonts
-    monaspace
   ];
 
   environment.sessionVariables = rec {
