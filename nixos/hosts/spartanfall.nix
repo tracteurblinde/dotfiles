@@ -41,4 +41,7 @@
 
   # For input-leap
   networking.firewall.allowedTCPPorts = [ 24800 ];
+
+  # Spartanfall is connected to a UPS
+  services.apcupsd.enable = true;
 }
