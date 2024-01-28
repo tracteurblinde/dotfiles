@@ -5,7 +5,7 @@ let
     let
       system = "x86_64-linux";
       hostModule = dotfiles-private.hardware.${host};
-      platformConfig = { config, ... } : {
+      platformConfig = { config, ... }: {
         nixpkgs.hostPlatform = {
           inherit system;
           gcc = lib.optionalAttrs (hostModule ? gcc) {
