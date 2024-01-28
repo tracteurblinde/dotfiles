@@ -97,6 +97,7 @@ in
 
   home.file = {
     ".config/mpv/mpv.conf".source = dotfiles/mpv.conf;
+    ".config/MangoHud/MangoHud.conf".source = dotfiles/MangoHud.conf;
   };
 
   home.sessionVariables = {
