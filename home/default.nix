@@ -1,17 +1,16 @@
 { nixpkgs, home-manager, dotfiles-private, dotfiles-utils, ... }@inputs:
 let
-  system = "x86_64-linux";
-  pkgs = import nixpkgs { inherit system; };
-
   mkHomeConfig = user: host:
     let
-      user_module = dotfiles-private.users.${user} { inherit pkgs dotfiles-utils; };
+      system = "x86_64-linux";
+      pkgs = import nixpkgs { inherit system; };
+      userModule = dotfiles-private.users.${user} { inherit pkgs dotfiles-utils; };
     in
     home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
       modules = [
-        user_module.homeConfig
+        userModule.homeConfig
         dotfiles-private.homeCommon
         ./hosts/${host}.nix
         ./home.nix
