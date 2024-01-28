@@ -12,7 +12,12 @@
 
   networking.hostName = "spartanfall";
 
-  nixpkgs.allowUnfreePackages = [ ];
+  # Xbox One Controller
+  hardware.xone.enable = true;
+
+  nixpkgs.allowUnfreePackages = [ 
+    "xow_dongle-firmware"
+  ];
 
   hardware.opengl.extraPackages = with pkgs; [
     amdvlk
