@@ -71,6 +71,7 @@ in
     tidal-hifi
 
     #Gaming
+    mangohud
     parsec-bin
     path-of-building
     prismlauncher
