@@ -142,7 +142,7 @@ in
   programs.kitty = {
     enable = true;
     theme = "Catppuccin-Mocha";
-    font.name = "MonaspiceXe Nerd Font Mono";
+    font.name = "MonaspiceKr Nerd Font Mono";
     shellIntegration = {
       enableBashIntegration = true;
       enableFishIntegration = true;
