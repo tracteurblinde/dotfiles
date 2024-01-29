@@ -24,6 +24,7 @@ in
     gnome.gnome-themes-extra
 
     gnomeExtensions.appindicator
+    gnomeExtensions.gamemode-indicator-in-system-settings
     gnomeExtensions.gsconnect
     gnomeExtensions.kimpanel
     gnomeExtensions.openweather # Currently disabled while waiting on Gnome 45 support
@@ -40,6 +41,7 @@ in
         "appindicatorsupport@rgcjonas.gmail.com"
         "drive-menu@gnome-shell-extensions.gcampax.github.com"
         "gsconnect@andyholmes.github.io"
+        "gmind@tungstnballon.gitlab.com"
         "kimpanel@kde.org"
         "native-window-placement@gnome-shell-extensions.gcampax.github.com"
         "tiling-assistant@leleat-on-github"

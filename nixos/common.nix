@@ -128,6 +128,7 @@
         pango
       ];
     })
+    mangohud
     protontricks
 
     nerdfonts
@@ -162,10 +163,17 @@
     atomix # puzzle game
   ]);
 
+  programs.gamemode.enable = true;
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = false; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = false; # Open ports in the firewall for Source Dedicated Server
+    package = pkgs.steam.override {
+      extraEnv = {
+        MANGOHUD = true;
+      };
+    };
   };
 
   programs.zsh.enable = true;

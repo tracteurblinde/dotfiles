@@ -72,8 +72,6 @@ in
     tidal-hifi
 
     #Gaming
-    goverlay # GUI for configuring mangohud
-    mangohud
     parsec-bin
     path-of-building
     prismlauncher
@@ -108,9 +106,6 @@ in
     EDITOR = "nvim";
     PATH = "$HOME/.config/zsh/scripts:$HOME/.cargo/bin:$PATH";
     TERM = "xterm-256color";
-
-    # Enable mangohud everywhere
-    MANGOHUD = "1";
 
     # WA for missing window decorations in kitty under gnome
     #   https://github.com/kovidgoyal/kitty/issues/1645
