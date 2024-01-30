@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -e -u -o pipefail
 
-sudo nixos-rebuild --refresh --upgrade switch
-home-manager --refresh switch
+sudo nixos-rebuild switch
+home-manager switch
