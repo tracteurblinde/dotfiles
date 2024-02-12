@@ -1,4 +1,4 @@
-{ nixpkgs, lanzaboote, dotfiles-private, dotfiles-utils, ... }@inputs:
+{ nixpkgs, dotfiles-private, dotfiles-utils, ... }@inputs:
 let
   lib = nixpkgs.lib;
   mkOSConfig = host:
@@ -26,7 +26,8 @@ let
         dotfiles-private.nixosCommon
         platformConfig
 
-        lanzaboote.nixosModules.lanzaboote
+        inputs.talon-nix.nixosModules.talon
+        inputs.lanzaboote.nixosModules.lanzaboote
         dotfiles-utils.unfreeMerger
       ];
 

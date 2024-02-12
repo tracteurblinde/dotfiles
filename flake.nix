@@ -42,6 +42,12 @@
       inputs.flake-utils.follows = "flake-utils";
     };
 
+    # Talon's NixOS module
+    talon-nix = {
+      url = "github:nix-community/talon-nix";
+      inputs.nixpkgs.follows = "nixos-unstable";
+    };
+
     ##
     # Program Flakes
     ##

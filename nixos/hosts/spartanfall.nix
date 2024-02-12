@@ -16,6 +16,7 @@
   hardware.xone.enable = true;
 
   nixpkgs.allowUnfreePackages = [
+    "talon"
     "xow_dongle-firmware"
   ];
 
@@ -36,12 +37,10 @@
     solaar
   ];
 
-  # Open raw HID access to the logitech mouse for all users
-  #  services.udev.extraRules = ''
-  #KERNEL=="hidraw*", SUBSYSTEM=="hidraw", DRIVERS=="logitech-djreceiver", MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"
-  #'';
   services.udev.extraRules = ''
-    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"
+    # Open raw HID access to the logitech mouse for all users
+    #KERNEL=="hidraw*", SUBSYSTEM=="hidraw", DRIVERS=="logitech-djreceiver", MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"
+    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", DRIVERS=="usbhid",              MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"
   '';
 
   # For input-leap
@@ -49,4 +48,7 @@
 
   # Spartanfall is connected to a UPS
   services.apcupsd.enable = true;
+
+  # Talon Voice
+  programs.talon.enable = true;
 }
