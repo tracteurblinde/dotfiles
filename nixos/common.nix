@@ -165,7 +165,20 @@
     atomix # puzzle game
   ]);
 
+  programs.adb.enable = true;
   programs.gamemode.enable = true;
+  programs.zsh.enable = true;
+
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
+
+  # programs.hyprland = {
+  #   enable = true;
+  #   package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  #   portalPackage = inputs.xdg-desktop-portal-hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+  # };
 
   programs.steam = {
     enable = true;
@@ -177,15 +190,6 @@
       };
     };
   };
-
-  programs.zsh.enable = true;
-  programs.adb.enable = true;
-
-  # programs.hyprland = {
-  #   enable = true;
-  #   package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  #   portalPackage = inputs.xdg-desktop-portal-hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
-  # };
 
   networking = {
     networkmanager.enable = true;

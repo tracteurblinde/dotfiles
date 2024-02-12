@@ -29,6 +29,7 @@
         "ctags",
         "dbaeumer",
         "dconf",
+        "direnv",
         "djreceiver",
         "dotfiles",
         "dport",
