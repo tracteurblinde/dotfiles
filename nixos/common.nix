@@ -105,6 +105,7 @@
     "steam"
     "steam-original"
     "steam-run"
+    "vista-fonts"
   ];
 
   # List packages installed in system profile. To search, run:
@@ -132,8 +133,14 @@
     })
     mangohud
     protontricks
+  ];
 
-    nerdfonts
+  fonts.packages = with pkgs; [
+    ibm-plex
+    (nerdfonts.override {
+      fonts = [ "LiberationMono" "Monaspace" ];
+    })
+    vistafonts # For compat with MSOffice documents
   ];
 
   environment.sessionVariables = rec {
