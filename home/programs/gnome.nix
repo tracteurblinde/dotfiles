@@ -64,7 +64,7 @@ in
     };
     "org/gnome/desktop/wm/preferences" = {
       "theme" = "Catppuccin-Mocha-Compact-Lavender-Dark";
-      "titlebar-font" = "LiterationSans Nerd Font Propo Bold 11";
+      "titlebar-font" = "IBM Plex Sans Bold 11";
     };
     "org/gnome/desktop/interface" = {
       "color-scheme" = "prefer-dark";
@@ -73,9 +73,9 @@ in
       "gtk-theme" = "Catppuccin-Mocha-Compact-Lavender-Dark";
 
       "font-antialiasing" = "rgba";
-      "font-name" = "LiterationSans Nerd Font Propo 10";
-      "document-font-name" = "LiterationSans Nerd Font Propo 11";
-      "monospace-font-name" = "MonaspiceNe Nerd Font Mono 10";
+      "font-name" = "IBM Plex Sans 10";
+      "document-font-name" = "IBM Plex Sans 11";
+      "monospace-font-name" = "BlexMono Nerd Font Mono 10";
     };
     "org/gnome/desktop/notifications" = {
       "show-in-lock-screen" = false;

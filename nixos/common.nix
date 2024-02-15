@@ -138,7 +138,7 @@
   fonts.packages = with pkgs; [
     ibm-plex
     (nerdfonts.override {
-      fonts = [ "LiberationMono" "Monaspace" ];
+      fonts = [ "Monaspace" "IBMPlexMono" ];
     })
     vistafonts # For compat with MSOffice documents
   ];
