@@ -103,6 +103,8 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
 
 ### Manual Configuration
 - Use `protonup-qt` to configure Proton-GE with Steam.
+- `chatterino` requires manual configuration of the auth token and tab layout for the streamers you follow.
+- `talon` requires pulling the community config, following the instructions from [talonhub/community](https://github.com/talonhub/community).
 
 ## Convenience scripts
 ```sh
@@ -120,6 +122,8 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
 - [ ] Fluent Reader
 - [ ] streamlink
   - this setup might just be the chatterino setup to embed the auth token. May end up as a manual step.
+- [ ] Talon Voice
+  - Talon wants write access to the configuration files :/
 - [ ] Vencord configuration
   - Theme: `https://catppuccin.github.io/discord/dist/catppuccin-mocha-lavender.theme.css`
   - Currently using cloud sync, but it'd be nice to codify it in nix
