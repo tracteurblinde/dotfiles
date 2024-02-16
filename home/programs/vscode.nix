@@ -10,7 +10,7 @@
       "cSpell.enableFiletypes" = [ "nix" ];
       "diffEditor.ignoreTrimWhitespace" = false;
       "editor.formatOnSave" = true;
-      "editor.fontFamily" = "'BlexMono Nerd Font Mono 10', 'monospace', monospace";
+      "editor.fontFamily" = "'MonaspiceNe Nerd Font Mono', 'monospace', monospace";
       "git.autofetch" = true;
       "git.confirmSync" = false;
       "github.copilot.enable" = {
