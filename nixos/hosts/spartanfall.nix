@@ -1,9 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.extraModprobeConfig = "options kvm_intel nested=1";
 
   # AMD Discrete and Intel Integrated Graphics
   # The order matters. This configuration seems to be the most stable.

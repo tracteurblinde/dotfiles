@@ -31,7 +31,7 @@ The dotfiles-private flake separates out the private configuration from the publ
         nixosConfig = {
           isNormalUser = true;
           description = "<Display Name>";
-          extraGroups = [ "networkmanager" "video" "audio" "wheel" ];
+          extraGroups = [ "networkmanager" "video" "audio" "wheel" "adbusers" "libvirtd" ];
         };
         homeConfig = {
           home.username = "<username>";
