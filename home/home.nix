@@ -56,6 +56,7 @@ in
     libreoffice
     fluent-reader
     krita
+    peazip
     qbittorrent
     tenacity
     trilium-desktop-beta
