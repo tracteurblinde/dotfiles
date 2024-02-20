@@ -81,6 +81,7 @@ in
     # Development GUI
     gitkraken
     etcher
+    rpi-imager
 
     # Development CLI
     (lib.hiPrio clang)
