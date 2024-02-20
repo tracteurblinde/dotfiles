@@ -58,6 +58,7 @@ in
     krita
     peazip
     qbittorrent
+    qdirstat
     tenacity
     trilium-desktop-beta
     filezilla
