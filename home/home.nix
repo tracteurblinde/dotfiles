@@ -33,7 +33,7 @@ in
 
   # Acknowledge insecure packages
   nixpkgs.config.permittedInsecurePackages = [
-
+    "electron-19.1.9" # For etcher
   ];
 
   home.packages = with pkgs; [
@@ -80,6 +80,7 @@ in
 
     # Development GUI
     gitkraken
+    etcher
 
     # Development CLI
     (lib.hiPrio clang)
