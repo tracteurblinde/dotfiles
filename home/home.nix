@@ -52,6 +52,7 @@ in
     tmux
 
     # Productivity Suite
+    chromium
     libreoffice
     fluent-reader
     krita
