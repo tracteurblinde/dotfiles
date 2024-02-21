@@ -8,6 +8,14 @@
     userSettings = {
       "catppuccin.accentColor" = "lavender";
       "cSpell.enableFiletypes" = [ "nix" ];
+      "cSpell.userWords" = [
+        "devshell"
+        "nixos"
+        "nixpkgs"
+        "numtide"
+        "pkgs"
+        "stdenv"
+      ];
       "diffEditor.ignoreTrimWhitespace" = false;
       "editor.formatOnSave" = true;
       "editor.fontFamily" = "'MonaspiceNe Nerd Font Mono', 'monospace', monospace";
