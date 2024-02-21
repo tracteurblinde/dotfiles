@@ -93,6 +93,8 @@ in
     cmake
     ctags
     gdb
+    micropython
+    mpremote
     ninja
     rustup
 
