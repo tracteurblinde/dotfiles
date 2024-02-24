@@ -15,6 +15,7 @@
         "numtide"
         "pkgs"
         "stdenv"
+        "venv"
       ];
       "diffEditor.ignoreTrimWhitespace" = false;
       "editor.formatOnSave" = true;
