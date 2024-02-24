@@ -140,12 +140,14 @@ in
   };
 
   home.sessionVariables = {
-    NIXOS_OZONE_WL = "1";
-    MOZ_USE_XINPUT2 = "1";
-    MOZ_ENABLE_WAYLAND = "1";
     EDITOR = "nvim";
     PATH = "$HOME/.config/zsh/scripts:$HOME/.cargo/bin:$PATH";
     TERM = "xterm-256color";
+
+    NIXOS_OZONE_WL = "1";
+    MOZ_USE_XINPUT2 = "1";
+    MOZ_ENABLE_WAYLAND = "1";
+
 
     # WA for missing window decorations in kitty under gnome
     #   https://github.com/kovidgoyal/kitty/issues/1645
