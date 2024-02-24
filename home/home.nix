@@ -45,6 +45,7 @@ in
     ./programs/fish.nix
     ./programs/gnome.nix
     #./programs/hyprland.nix
+    ./programs/librewolf.nix
     ./programs/vscode.nix
     ./programs/zsh.nix
   ];
@@ -194,14 +195,6 @@ in
       tab_bar_style = "powerline";
       tab_powerline_style = "slanted";
       tab_title_template = "{title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}";
-    };
-  };
-
-  programs.librewolf = {
-    enable = true;
-    settings = {
-      "webgl.disabled" = false;
-      "identity.fxaccounts.enabled" = true;
     };
   };
 
