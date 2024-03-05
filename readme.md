@@ -128,6 +128,8 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
   - Theme: `https://catppuccin.github.io/discord/dist/catppuccin-mocha-lavender.theme.css`
   - Currently using cloud sync, but it'd be nice to codify it in nix
 ### Scratch
+- [ ] Use a real overlay to override packages instead of doing it manually
+  - https://nixos.wiki/wiki/Overlays
 - [ ] Gnome -> Hyprland
   - TBH, Gnome has been waaay more our style than KDE so far
   - But we're still intrigued by Hyprland
