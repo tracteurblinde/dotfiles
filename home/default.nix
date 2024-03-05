@@ -3,7 +3,12 @@ let
   mkHomeConfig = user: host:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [
+          (import ../overlay.nix)
+        ];
+      };
       userModule = dotfiles-private.users.${user} { inherit pkgs dotfiles-utils; };
     in
     home-manager.lib.homeManagerConfiguration {

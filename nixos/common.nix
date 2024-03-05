@@ -1,10 +1,12 @@
-{ config, inputs, lib, pkgs, ... }:
+{ config, inputs, lib, pkgs, nixpkgs, ... }:
 
 {
-  imports =
-    [
-      ./users.nix
-    ];
+  imports = [
+    ./users.nix
+  ];
+  nixpkgs.overlays = [
+    (import ../overlay.nix)
+  ];
 
   # Bootloader.
   boot = {
