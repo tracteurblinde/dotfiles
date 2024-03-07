@@ -114,7 +114,9 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
 
 ## Todo:
 ### Known Issues
-- [ ] Path of Building has no icon, must be launched by running `pobfrontend`
+- Missing Shortcuts. These must be run manually. (`alt+f2`)
+  - [ ] Cura `cura`
+  - [ ] Path of Building `pobfrontend`
 ### Missing Configuration
 - [ ] chatterino
   - Auth isn't separated into another file
