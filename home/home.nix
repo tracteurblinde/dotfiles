@@ -157,6 +157,16 @@
     };
   };
 
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "x-scheme-handler/element" = "element-desktop.desktop";
+      "x-scheme-handler/ftp" = "filezilla.desktop";
+      "x-scheme-handler/magnet" = "qbittorrent.desktop";
+      "x-scheme-handler/tidal" = "tidal-hifi.desktop";
+    };
+  };
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
