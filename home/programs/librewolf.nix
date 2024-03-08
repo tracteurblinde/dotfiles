@@ -18,6 +18,7 @@ let
 in
 {
   home.sessionVariables.BROWSER = "librewolf";
+  home.sessionVariables.DEFAULT_BROWSER = "librewolf";
 
   xdg.mimeApps.defaultApplications = builtins.listToAttrs (map
     (mimeType: {
