@@ -135,6 +135,9 @@
     })
     mangohud
     protontricks
+    winetricks
+    wineWowPackages.stable
+    wineWowPackages.waylandFull
   ];
 
   fonts.packages = with pkgs; [
