@@ -48,7 +48,6 @@
     libreoffice
     fluent-reader
     krita
-    peazip
     qbittorrent
     qdirstat
     tenacity
