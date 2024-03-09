@@ -3,15 +3,6 @@ let
   pkgs = prev;
 in
 {
-  # Pending v0.63.3 PR Merge https://github.com/NixOS/nixpkgs/pull/292747
-  trilium-desktop = pkgs.trilium-desktop.overrideAttrs (old: rec {
-    version = "0.63.3";
-    src = pkgs.fetchurl {
-      url = "https://github.com/zadam/trilium/releases/download/v${version}/trilium-linux-x64-${version}.tar.xz";
-      sha256 = "1dcq7s4lcp9bc0p4ylzxyfc020xvj7scrlsddzwcnp8mqz5ckik9";
-    };
-  });
-
   # nixpkgs only exposes cura 4 due to difficulties with the cura 5 build system
   # Just use the appimage for now
   # From @MarSoft https://github.com/NixOS/nixpkgs/issues/186570#issuecomment-1627797219
