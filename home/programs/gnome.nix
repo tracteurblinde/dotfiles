@@ -32,6 +32,12 @@ in
     gnomeExtensions.transparent-window-moving
   ];
 
+  xdg.mimeApps.defaultApplications = {
+    "image/png" = "org.gnome.Loupe.desktop";
+    "image/jpeg" = "org.gnome.Loupe.desktop";
+    "archive/zip" = "org.gnome.FileRoller.desktop";
+  };
+
   # Sets the dconf settings for the current user
   # Found by running `dconf watch /` and changing settings :)
   dconf.settings = {
