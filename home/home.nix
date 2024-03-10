@@ -71,6 +71,7 @@
     path-of-building
     prismlauncher
     protonup-qt
+    retroarch
 
     # Development GUI
     gitkraken

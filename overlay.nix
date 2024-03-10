@@ -33,4 +33,10 @@ in
       exec "${cura5}/bin/cura5" "''${args[@]}"
     ''
   );
+
+  retroarch = pkgs.retroarch.override {
+    cores = with pkgs.libretro; [
+      vba-next
+    ];
+  };
 }
