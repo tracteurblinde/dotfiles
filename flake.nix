@@ -35,7 +35,7 @@
     # Surface Patches
     # Overriding awaiting https://github.com/NixOS/nixos-hardware/pull/878
     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    nixos-hardware.url = "github:tracteurblinde/nixos-hardware/surface-update-6.7.6";
+    nixos-hardware.url = "github:tracteurblinde/nixos-hardware/surface-update-6.7.9";
 
     # Used for Secure Boot
     lanzaboote = {

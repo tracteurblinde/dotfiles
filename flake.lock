@@ -209,16 +209,16 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1709877336,
-        "narHash": "sha256-1u29AJ8K/Ma5Urbg+ROGhZVOdUNaRPODQWZEZV00n4g=",
+        "lastModified": 1710099217,
+        "narHash": "sha256-rcMBOXgio0CZetEPvYTuOtpCfQjiOxa4kr7ZT2mR1Ps=",
         "owner": "tracteurblinde",
         "repo": "nixos-hardware",
-        "rev": "04144cc418a82ee9c136bc97cc61ce4d7855c9a9",
+        "rev": "3a50fa0832ac52e6b56e42ff8c088bd64e426c2c",
         "type": "github"
       },
       "original": {
         "owner": "tracteurblinde",
-        "ref": "surface-update-6.7.6",
+        "ref": "surface-update-6.7.9",
         "repo": "nixos-hardware",
         "type": "github"
       }
