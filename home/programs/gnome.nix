@@ -39,6 +39,11 @@ in
     "x-scheme-handler/sms" = "org.gnome.Shell.Extensions.GSConnect.desktop";
     "x-scheme-handler/tel" = "org.gnome.Shell.Extensions.GSConnect.desktop";
   };
+  xdg.mimeApps.associations.added = {
+    # GSConnect adds itself here at startup. For ease of use, we add it here
+    "x-scheme-handler/sms" = "org.gnome.Shell.Extensions.GSConnect.desktop";
+    "x-scheme-handler/tel" = "org.gnome.Shell.Extensions.GSConnect.desktop";
+  };
 
   # Sets the dconf settings for the current user
   # Found by running `dconf watch /` and changing settings :)
