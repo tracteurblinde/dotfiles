@@ -122,6 +122,8 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
   - Auth isn't separated into another file
 - [ ] input-leap
 - [ ] Fluent Reader
+- [ ] Librewolf
+  - Steal ideas from https://vermaden.wordpress.com/2024/03/18/sensible-firefox-setup/
 - [ ] streamlink
   - this setup might just be the chatterino setup to embed the auth token. May end up as a manual step.
 - [ ] Talon Voice
