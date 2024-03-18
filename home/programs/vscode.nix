@@ -31,6 +31,14 @@
       "terminal.integrated.defaultProfile.linux" = "zsh";
       "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "catppuccin-mocha";
+      "python.formatting.provider" = "black";
+      "python.formatting.blackArgs" = [ "--line-length=119" ];
+      "python.sortImports.args" = [ "--profile" "black" "--line-length" "119" "--skip-gitignore" ];
+      "[python]" = {
+        "editor.codeActionsOnSave" = {
+          "source.organizeImports" = true;
+        };
+      };
     };
 
     extensions = with pkgs.vscode-extensions; [
