@@ -36,7 +36,7 @@
       "python.sortImports.args" = [ "--profile" "black" "--line-length" "119" "--skip-gitignore" ];
       "[python]" = {
         "editor.codeActionsOnSave" = {
-          "source.organizeImports" = true;
+          "source.organizeImports" = "explicit";
         };
       };
     };
