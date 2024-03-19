@@ -24,7 +24,6 @@
 
   # Acknowledge insecure packages
   nixpkgs.config.permittedInsecurePackages = [
-    "electron-19.1.9" # For etcher
   ];
 
   home.packages = with pkgs; [
@@ -75,7 +74,6 @@
 
     # Development GUI
     gitkraken
-    etcher
     rpi-imager
 
     # Development CLI
