@@ -31,14 +31,15 @@
       "terminal.integrated.defaultProfile.linux" = "zsh";
       "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "catppuccin-mocha";
-      "python.formatting.provider" = "black";
-      "python.formatting.blackArgs" = [ "--line-length=119" ];
-      "python.sortImports.args" = [ "--profile" "black" "--line-length" "119" "--skip-gitignore" ];
+      "black-formatter.args" = [ "--line-length=119" ];
+      "isort.args" = [ "--profile" "black" "--line-length" "119" "--skip-gitignore" ];
       "[python]" = {
         "editor.codeActionsOnSave" = {
-          #"source.organizeImports" = "explicit";
+          "source.organizeImports" = "explicit";
         };
+        "editor.defaultFormatter" = "ms-python.black-formatter";
       };
+          
     };
 
     extensions = with pkgs.vscode-extensions; [
