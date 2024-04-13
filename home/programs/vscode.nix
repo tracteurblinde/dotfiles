@@ -39,7 +39,7 @@
         };
         "editor.defaultFormatter" = "ms-python.black-formatter";
       };
-          
+
     };
 
     extensions = with pkgs.vscode-extensions; [
