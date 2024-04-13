@@ -138,3 +138,6 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
   - TBH, Gnome has been waaay more our style than KDE so far
   - But we're still intrigued by Hyprland
   - https://wiki.hyprland.org/Configuring/Example-configurations/
+- [ ] Try KDE Plasma 6
+- [ ] [deadnix](https://github.com/astro/deadnix) - "Scan .nix files for dead code (unused variable bindings)." Although, I'm pretty sure we are intentionally keeping some dead code around.
+- [ ] [statix](https://github.com/nerdypepper/statix) - "Lints and suggestions for the Nix programming language."
