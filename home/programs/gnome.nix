@@ -2,23 +2,23 @@
 { pkgs, ... }:
 
 let
-  catppuccin-lavender-mocha = pkgs.catppuccin-gtk.override {
-    accents = [ "lavender" ];
+  catppuccin-mauve-mocha = pkgs.catppuccin-gtk.override {
+    accents = [ "mauve" ];
     size = "compact";
     tweaks = [ "rimless" "normal" ];
     variant = "mocha";
   };
 
-  catppuccin-icons-lavender-mocha = pkgs.catppuccin-papirus-folders.override {
-    accent = "lavender";
+  catppuccin-icons-mauve-mocha = pkgs.catppuccin-papirus-folders.override {
+    accent = "mauve";
     flavor = "mocha";
   };
 in
 {
   home.packages = with pkgs; [
-    catppuccin-lavender-mocha
-    catppuccin-icons-lavender-mocha
-    catppuccin-cursors.mochaLavender
+    catppuccin-mauve-mocha
+    catppuccin-icons-mauve-mocha
+    catppuccin-cursors.mochaMauve
 
     gnome.gnome-tweaks
     gnome.gnome-themes-extra
@@ -76,14 +76,14 @@ in
       "switch-to-workspace-right" = [ "<Control><Super>Right" ];
     };
     "org/gnome/desktop/wm/preferences" = {
-      "theme" = "Catppuccin-Mocha-Compact-Lavender-Dark";
+      "theme" = "Catppuccin-Mocha-Compact-Mauve-Dark";
       "titlebar-font" = "LiterationSans Nerd Font Propo Bold 11";
     };
     "org/gnome/desktop/interface" = {
       "color-scheme" = "prefer-dark";
-      "cursor-theme" = "Catppuccin-Mocha-Lavender-Cursors";
+      "cursor-theme" = "Catppuccin-Mocha-Mauve-Cursors";
       "icon-theme" = "Papirus-Dark";
-      "gtk-theme" = "Catppuccin-Mocha-Compact-Lavender-Dark";
+      "gtk-theme" = "Catppuccin-Mocha-Compact-Mauve-Dark";
 
       "font-antialiasing" = "rgba";
       "font-name" = "LiterationSans Nerd Font Propo 10";

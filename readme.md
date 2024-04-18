@@ -77,14 +77,14 @@ home-manager switch --flake '.#<user>@<host>'
 ```
 
 ### Manual Theming
-In general, everything is themed with the Mocha Catppuccin theme using the Lavender accent.
+In general, everything is themed with the Mocha Catppuccin theme using the Mauve accent.
 
 - Prismalauncher: https://github.com/catppuccin/prismlauncher
 - Librewolf
   - Browser themed using firefox color: https://github.com/catppuccin/firefox
   - Sites themed using Stylus: https://github.com/catppuccin/userstyles/tree/main
     - Edit stylus config to add custom Forgejo (Codeberg), Mastodon, and SearxNG domains.
-    - Since Librewolf will lightmode everything, some sites will require dark mode configured in the site's settings. Alternatively, the stylus settings for that site/theme can be used to set `mocha` as the light theme. In either case, Stylus settings should be modified to set `lavender` as the accent color. Suggested sites:
+    - Since Librewolf will lightmode everything, some sites will require dark mode configured in the site's settings. Alternatively, the stylus settings for that site/theme can be used to set `mocha` as the light theme. In either case, Stylus settings should be modified to set `mauve` as the accent color. Suggested sites:
       - Codeberg
       - Github
       - Gmail / Google
@@ -99,7 +99,7 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
   - Anything else themed with Dark Reader: https://github.com/catppuccin/dark-reader
     - Don't download anything, use the instructions to enable the built-in catppuccin theme since that's mocha
     - Then set Dark Reader to detect dark themes.
-- Vesktop: https://catppuccin.github.io/discord/dist/catppuccin-mocha-lavender.theme.css
+- Vesktop: https://catppuccin.github.io/discord/dist/catppuccin-mocha-mauve.theme.css
 
 ### Manual Configuration
 - Use `protonup-qt` to configure Proton-GE with Steam.
@@ -129,7 +129,7 @@ In general, everything is themed with the Mocha Catppuccin theme using the Laven
 - [ ] Talon Voice
   - Talon wants write access to the configuration files :/
 - [ ] Vencord configuration
-  - Theme: `https://catppuccin.github.io/discord/dist/catppuccin-mocha-lavender.theme.css`
+  - Theme: `https://catppuccin.github.io/discord/dist/catppuccin-mocha-mauve.theme.css`
   - Currently using cloud sync, but it'd be nice to codify it in nix
 ### Scratch
 - [x] Use a real overlay to override packages instead of doing it manually

@@ -6,7 +6,7 @@
     # package = pkgs.vscodium;
 
     userSettings = {
-      "catppuccin.accentColor" = "lavender";
+      "catppuccin.accentColor" = "mauve";
       "cSpell.enableFiletypes" = [ "nix" ];
       "cSpell.userWords" = [
         "devshell"
