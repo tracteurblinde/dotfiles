@@ -6,7 +6,7 @@
   ];
 
   microsoft-surface.surface-control.enable = true;
-  microsoft-surface.kernelVersion = "6.8.1";
+  microsoft-surface.kernelVersion = "6.8.6";
 
   networking.hostName = "aurora";
 
