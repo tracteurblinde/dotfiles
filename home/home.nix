@@ -13,6 +13,7 @@
   nixpkgs.allowUnfreePackages = [
     "discord"
     "gitkraken"
+    "obsidian"
     "parsec-bin"
 
     "vscode"
@@ -47,6 +48,7 @@
     libreoffice
     fluent-reader
     krita
+    obsidian
     qbittorrent
     qdirstat
     tenacity
