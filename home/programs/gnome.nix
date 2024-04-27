@@ -36,6 +36,7 @@ in
     "archive/zip" = "org.gnome.FileRoller.desktop";
     "image/jpeg" = "org.gnome.Loupe.desktop";
     "image/png" = "org.gnome.Loupe.desktop";
+    "image/webp" = "org.gnome.Loupe.desktop";
     "x-scheme-handler/sms" = "org.gnome.Shell.Extensions.GSConnect.desktop";
     "x-scheme-handler/tel" = "org.gnome.Shell.Extensions.GSConnect.desktop";
   };
