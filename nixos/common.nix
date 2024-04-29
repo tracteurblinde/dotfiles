@@ -50,14 +50,6 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
 
-    libinput = {
-      enable = true;
-      touchpad = {
-        accelProfile = "adaptive";
-        disableWhileTyping = true;
-      };
-    };
-
     # Configure keymap in X11
     xkb = {
       layout = "us";
@@ -74,6 +66,14 @@
       vaapiVdpau
       libvdpau-va-gl
     ];
+  };
+
+  services.libinput = {
+    enable = true;
+    touchpad = {
+      accelProfile = "adaptive";
+      disableWhileTyping = true;
+    };
   };
 
   # Enable CUPS to print documents.
