@@ -48,7 +48,9 @@
       catppuccin.catppuccin-vsc-icons
 
       # Utility
+      aaron-bond.better-comments
       eamodio.gitlens
+      mkhl.direnv
       twxs.cmake
       wakatime.vscode-wakatime
 
@@ -63,10 +65,9 @@
       serayuzgur.crates
       vadimcn.vscode-lldb
 
-
       # Typescript
       dbaeumer.vscode-eslint
-
+      svelte.svelte-vscode
 
       # Other Languages
       bbenoist.nix
@@ -82,12 +83,6 @@
       ms-vscode-remote.remote-ssh
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
-        name = "better-comments";
-        publisher = "aaron-bond";
-        version = "3.0.2";
-        sha256 = "hQmA8PWjf2Nd60v5EAuqqD8LIEu7slrNs8luc3ePgZc=";
-      }
-      {
         name = "prettify-json";
         publisher = "mohsen1";
         version = "0.0.3";
@@ -102,14 +97,26 @@
       {
         name = "remote-explorer";
         publisher = "ms-vscode";
-        version = "0.4.1";
-        sha256 = "E0QsXIpCUjpoX6GNtzbI8/UzxTwWMpQpzVvsPhA+3t4=";
+        version = "0.4.3";
+        sha256 = "772l0EnAWXLg53TxPZf93js/W49uozwdslmzNwD1vIk=";
       }
       {
         name = "remote-ssh-edit";
         publisher = "ms-vscode-remote";
         version = "0.86.0";
         sha256 = "JsbaoIekUo2nKCu+fNbGlh5d1Tt/QJGUuXUGP04TsDI=";
+      }
+      {
+        name = "debugpy";
+        publisher = "ms-python";
+        version = "2024.4.0";
+        sha256 = "Ac6bQB+mIoXMa6bQpkK+WjFbR/fmjsZVWdtyYD0bipQ=";
+      }
+      {
+        name = "tauri-vscode";
+        publisher = "tauri-apps";
+        version = "0.2.6";
+        sha256 = "O9NxFemUgt9XmhL6BnNArkqbCNtHguSbvVOYwlT0zg4=";
       }
     ];
   };
