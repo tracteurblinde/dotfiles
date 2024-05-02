@@ -6,8 +6,8 @@
     # Nixpkgs
     ##
     # 🎶I'm an unstable girl in an unstable world🎶
-    nixos-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixos-unstable.url = "github:auxolotl/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:auxolotl/nixpkgs/nixpkgs-unstable";
 
     systems.url = "github:nix-systems/default-linux";
 
