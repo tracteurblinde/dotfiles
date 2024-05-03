@@ -58,12 +58,11 @@ in
       '';
 
       extraPkgs = pkgs: with pkgs; [ zstd ];
-
-
-      retroarch = pkgs.retroarch.override {
-        cores = with pkgs.libretro; [
-          vba-next
-        ];
-      };
     };
+
+  retroarch = pkgs.retroarch.override {
+    cores = with pkgs.libretro; [
+      vba-next
+    ];
+  };
 }
