@@ -34,17 +34,6 @@ rec {
     ''
   );
 
-  iptsd = pkgs.iptsd.overrideAttrs (old: rec {
-    version = "2";
-
-    src = pkgs.fetchFromGitHub {
-      owner = "linux-surface";
-      repo = "iptsd";
-      rev = "v${version}";
-      hash = "sha256-zTXTyDgSa1akViDZlYLtJk1yCREGCSJKxzF+HZAWx0c=";
-    };
-  });
-
   libwacom-surface-patches = pkgs.fetchFromGitHub {
     owner = "linux-surface";
     repo = "libwacom-surface";
