@@ -63,8 +63,11 @@
     intel-media-driver
   ];
 
-  # Laptop fixes under Wayland
   programs.light.enable = true; # backlight
 
   hardware.bluetooth.enable = true;
+
+  services.iptsd.enable = true;
+  services.udev.packages = with pkgs; [ libwacom-surface ];
+  environment.systemPackages = with pkgs; [ libwacom-surface ];
 }
