@@ -29,7 +29,7 @@ let
         inputs.lanzaboote.nixosModules.lanzaboote
         inputs.lix-module.nixosModules.default
         inputs.talon-nix.nixosModules.talon
-        
+
         dotfiles-utils.unfreeMerger
       ];
 
