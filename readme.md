@@ -1,5 +1,5 @@
 # Tracteur's dotfiles
-Nix flakes based dotfiles. This configuration has been cobbled together from a variety of sources. It's a beautiful mess.
+[Auxolotl](https://aux.computer/)/[Lix](https://lix.systems/) flake based dotfiles. This configuration has been cobbled together from a variety of sources. It's a beautiful mess.
 
 ## Hosts
 - `aurora` - Microsoft Surface Laptop Studio 2021

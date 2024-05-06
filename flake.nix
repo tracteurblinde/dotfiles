@@ -35,6 +35,17 @@
     # Surface Patches
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
+    lix = {
+      url = "git+https://git@git.lix.systems/lix-project/lix?ref=refs/tags/2.90-beta.1";
+      flake = false;
+    };
+    lix-module = {
+      url = "git+https://git.lix.systems/lix-project/nixos-module";
+      inputs.lix.follows = "lix";
+      inputs.nixpkgs.follows = "nixos-unstable";
+      inputs.flake-utils.follows = "flake-utils";
+    };
+
     # Used for Secure Boot
     lanzaboote = {
       url = "github:nix-community/lanzaboote";
@@ -72,10 +83,12 @@
 
   nixConfig = {
     extra-substituters = [
+      "https://cache.lix.systems"
       "https://nix-community.cachix.org"
       # "https://hyprland.cachix.org"
     ];
     extra-trusted-public-keys = [
+      "cache.lix.systems:aBnZUw8zA7H35Cz2RyKFVs3H4PlGTLawyY5KRbvJR8o="
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       # "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
     ];
