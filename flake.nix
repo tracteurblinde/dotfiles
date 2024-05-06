@@ -6,8 +6,12 @@
     # Nixpkgs
     ##
     # 🎶I'm an unstable girl in an unstable world🎶
-    nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable"; # Auxolotl's os fork is currently broken :(
-    nixpkgs-unstable.url = "github:auxolotl/nixpkgs/nixpkgs-unstable";
+
+    # Auxolotl is brand new and not quite stable enough to be our daily driver
+    #nixos-unstable.url = "github:auxolotl/nixpkgs/nixos-unstable";
+    #nixpkgs-unstable.url = "github:auxolotl/nixpkgs/nixpkgs-unstable";
+    nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
     systems.url = "github:nix-systems/default-linux";
 

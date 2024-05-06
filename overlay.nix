@@ -71,4 +71,11 @@ rec {
       vba-next
     ];
   };
+
+  # Workaround waiting for https://github.com/NixOS/nixpkgs/pull/309326
+  streamlink = pkgs.streamlink.overrideAttrs (old: {
+    propagatedBuildInputs = old.propagatedBuildInputs or [ ] ++ [
+      pkgs.python3Packages.exceptiongroup
+    ];
+  });
 }
