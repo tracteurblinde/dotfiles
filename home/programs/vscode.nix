@@ -83,6 +83,24 @@
       ms-vscode-remote.remote-ssh
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
+        name = "cursorless";
+        publisher = "pokey";
+        version = "0.28.1096";
+        sha256 = "BCgtVPd3BYmZqOjiK3fG8NzNqG8aNxKGwvMVnZ89xGw=";
+      }
+      {
+        name = "debugpy";
+        publisher = "ms-python";
+        version = "2024.4.0";
+        sha256 = "Ac6bQB+mIoXMa6bQpkK+WjFbR/fmjsZVWdtyYD0bipQ=";
+      }
+      {
+        name = "parse-tree";
+        publisher = "pokey";
+        version = "0.30.0";
+        sha256 = "Sd/f7SRZNGpU0CeRbnHSVTtyX5pxefDBBFlvFjhfzoo=";
+      }
+      {
         name = "prettify-json";
         publisher = "mohsen1";
         version = "0.0.3";
@@ -105,12 +123,6 @@
         publisher = "ms-vscode-remote";
         version = "0.86.0";
         sha256 = "JsbaoIekUo2nKCu+fNbGlh5d1Tt/QJGUuXUGP04TsDI=";
-      }
-      {
-        name = "debugpy";
-        publisher = "ms-python";
-        version = "2024.4.0";
-        sha256 = "Ac6bQB+mIoXMa6bQpkK+WjFbR/fmjsZVWdtyYD0bipQ=";
       }
       {
         name = "tauri-vscode";
