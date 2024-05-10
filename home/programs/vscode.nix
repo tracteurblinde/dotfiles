@@ -83,6 +83,12 @@
       ms-vscode-remote.remote-ssh
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
+        name = "command-server";
+        publisher = "pokey";
+        version = "0.10.1";
+        sha256 = "r70WXsr5+aHv+W5aT6m7NcaEtte1dnWhRyxWWhu0uLM=";
+      }
+      {
         name = "cursorless";
         publisher = "pokey";
         version = "0.28.1096";
@@ -129,6 +135,12 @@
         publisher = "tauri-apps";
         version = "0.2.6";
         sha256 = "O9NxFemUgt9XmhL6BnNArkqbCNtHguSbvVOYwlT0zg4=";
+      }
+      {
+        name = "vscode-fileutils";
+        publisher = "sleistner";
+        version = "3.10.3";
+        sha256 = "v9oyoqqBcbFSOOyhPa4dUXjA2IVXlCTORs4nrFGSHzE=";
       }
     ];
   };
