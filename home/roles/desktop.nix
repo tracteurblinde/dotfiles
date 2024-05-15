@@ -13,6 +13,7 @@
     "gitkraken"
     "obsidian"
     "parsec-bin"
+    "slack"
 
     "vscode"
     "vscode-extension-github-copilot"
@@ -55,6 +56,7 @@
     chatterino2
     element-desktop
     fluffychat
+    slack
     vesktop
 
     # Media
