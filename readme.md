@@ -106,10 +106,11 @@ In general, everything is themed with the Mocha Catppuccin theme using the Mauve
 - `chatterino` requires manual configuration of the auth token and tab layout for the streamers you follow.
 - `talon` requires pulling the community config, following the instructions from [talonhub/community](https://github.com/talonhub/community).
 
-## Convenience scripts
-```sh
-./update.sh # Just does `nix flake update`
-./switch.sh # nixos and home-manager switch
+## Usage
+```bash
+nix flake update # Update the flake
+sudo nixos rebuild switch # Build and switch to the new configuration
+home-manager switch # Switch the user configuration
 ```
 
 ## Todo:
