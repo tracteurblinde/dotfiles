@@ -4,26 +4,26 @@ let
   mkOSConfig = host:
     let
       system = "x86_64-linux";
-      hostModule = dotfiles-private.hosts.${host};
+      privateHostModule = dotfiles-private.hosts.${host};
       platformConfig = { config, ... }: {
         nixpkgs.hostPlatform = {
           inherit system;
-          gcc = lib.optionalAttrs (hostModule ? gcc) {
-            inherit (hostModule.gcc) arch tune;
+          gcc = lib.optionalAttrs (privateHostModule ? gcc) {
+            inherit (privateHostModule.gcc) arch tune;
           };
         };
         # Needed when transitioning from a generic x86_64-linux system to a specialized one
-        # nix.settings.system-features = lib.optionalAttrs (hostModule ? gcc) [ "nixos-test" "benchmark" "big-parallel" "kvm" "gccarch-${hostModule.gcc.arch}" ];
+        # nix.settings.system-features = lib.optionalAttrs (privateHostModule ? gcc) [ "nixos-test" "benchmark" "big-parallel" "kvm" "gccarch-${privateHostModule.gcc.arch}" ];
       };
+      publicHostModule = lib.optional (builtins.pathExists ./hosts/${host}.nix) ./hosts/${host}.nix;
+      roleModule = lib.optional (builtins.pathExists ./roles/${privateHostModule.role}.nix) ./roles/${privateHostModule.role}.nix;
     in
     nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
         ./common.nix
         (import ./users.nix { inherit host; })
-        ./hosts/${host}.nix
-        ./roles/${hostModule.role}.nix
-        hostModule.config
+        privateHostModule.config
         dotfiles-private.nixosCommon
         platformConfig
 
@@ -32,7 +32,7 @@ let
         inputs.talon-nix.nixosModules.talon
 
         dotfiles-utils.unfreeMerger
-      ];
+      ] ++ publicHostModule ++ roleModule;
 
       # Make flake inputs and dotfiles-utils available in modules.
       specialArgs = {
