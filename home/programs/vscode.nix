@@ -142,6 +142,12 @@
         version = "3.10.3";
         sha256 = "v9oyoqqBcbFSOOyhPa4dUXjA2IVXlCTORs4nrFGSHzE=";
       }
+      {
+        name = "vscode-mogami";
+        publisher = "ninoseki";
+        version = "0.0.17";
+        sha256 = "3PPJbckx1xg6116RMQ4RTWQY3ovqU2NkzPYPedxRtJs=";
+      }
     ];
   };
 }
