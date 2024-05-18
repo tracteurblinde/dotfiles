@@ -5,7 +5,6 @@
   time.timeZone = "America/Los_Angeles";
 
   imports = [
-    ../role/desktop.nix
     inputs.nixos-hardware.nixosModules.microsoft-surface-common
   ];
 

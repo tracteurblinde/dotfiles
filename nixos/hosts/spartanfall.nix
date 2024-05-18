@@ -4,10 +4,6 @@
   networking.hostName = "spartanfall";
   time.timeZone = "America/Los_Angeles";
 
-  imports = [
-    ../role/desktop.nix
-  ];
-
   boot.extraModprobeConfig = "options kvm_intel nested=1";
 
   # AMD Discrete and Intel Integrated Graphics

@@ -17,7 +17,7 @@ let
   hostUsernames = builtins.filter
     (user:
       # If the user has no hosts specified, they are assumed to be on all hosts.
-      builtins.elem host (userModules.${user}.hosts or [host])
+      builtins.elem host (userModules.${user}.hosts or [ host ])
     )
     (builtins.attrNames userModules);
   generateNixOSUserAccounts = builtins.listToAttrs (

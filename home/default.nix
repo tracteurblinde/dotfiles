@@ -18,6 +18,7 @@ let
         userModule.homeConfig
         dotfiles-private.homeCommon
         ./hosts/${host}.nix
+        ./roles/${dotfiles-private.hosts.${host}.role}.nix
         ./home.nix
         dotfiles-utils.unfreeMerger
       ];

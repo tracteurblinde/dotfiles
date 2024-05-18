@@ -4,7 +4,7 @@ let
   mkOSConfig = host:
     let
       system = "x86_64-linux";
-      hostModule = dotfiles-private.hardware.${host};
+      hostModule = dotfiles-private.hosts.${host};
       platformConfig = { config, ... }: {
         nixpkgs.hostPlatform = {
           inherit system;
@@ -22,6 +22,7 @@ let
         ./common.nix
         (import ./users.nix { inherit host; })
         ./hosts/${host}.nix
+        ./roles/${hostModule.role}.nix
         hostModule.config
         dotfiles-private.nixosCommon
         platformConfig

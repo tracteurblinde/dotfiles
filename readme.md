@@ -46,12 +46,16 @@ The dotfiles-private flake separates out the private configuration from the publ
         username = "<username>";
         email = "<email>";
         groups = [ "wheel" ];
+        hosts = [ "<host>" ];
         face = ./face.png;
         background = ./background.png;
       };
     };
-    hardware = {
-      "<host>".config = import ./hardware_configuration.nix;
+    hosts = {
+      "<host>" = {
+        role = "desktop";
+        config = import ./hardware_configuration.nix;
+      };
     }
     homeCommon = {};
     nixosCommon = {};
