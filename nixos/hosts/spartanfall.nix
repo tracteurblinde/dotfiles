@@ -1,14 +1,19 @@
 { config, lib, pkgs, ... }:
 
 {
+  networking.hostName = "spartanfall";
+  time.timeZone = "America/Los_Angeles";
+
+  imports = [
+    ../role/desktop.nix
+  ];
+
   boot.extraModprobeConfig = "options kvm_intel nested=1";
 
   # AMD Discrete and Intel Integrated Graphics
   # The order matters. This configuration seems to be the most stable.
   boot.initrd.kernelModules = [ "i915" "amdgpu" ];
   services.xserver.videoDrivers = [ "amdgpu" "i915" ];
-
-  networking.hostName = "spartanfall";
 
   # Xbox One Controller
   hardware.xone.enable = true;

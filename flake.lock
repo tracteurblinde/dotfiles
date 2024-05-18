@@ -31,11 +31,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1713050990,
-        "narHash": "sha256-j3KJkuu1jj22csSDmi6Fm900Ar/3xIawiK6fOpps6rk=",
+        "lastModified": 1716058104,
+        "narHash": "sha256-m/VrBAkYaeL4u1IRZKrJaul24q8W152QWKFZtkMDJUY=",
         "ref": "refs/heads/main",
-        "rev": "7e880b8d81fa58afe4e239a20bbbdf7deccd1e5c",
-        "revCount": 11,
+        "rev": "ba44547ca9a0c5d69137d74f34647614cb3f95bb",
+        "revCount": 12,
         "type": "git",
         "url": "ssh://tracteur-lab/tracteur/dotfiles-private"
       },
@@ -46,11 +46,11 @@
     },
     "dotfiles-utils": {
       "locked": {
-        "lastModified": 1708380278,
-        "narHash": "sha256-eEYRYAEwJGQvVj3MolmeCb7wKQT799QGylLBUj/HSNU=",
+        "lastModified": 1716058088,
+        "narHash": "sha256-2pU8lTl6DiSyloGSb0Ex3/bKPmRBhNuqkYlfXvNxON4=",
         "ref": "refs/heads/main",
-        "rev": "a5d17b77a294b5698fef1590094a2a95848cefe8",
-        "revCount": 2,
+        "rev": "f3b0f0b51c9f75f3a21aa97f84f549b52f41d8b9",
+        "revCount": 3,
         "type": "git",
         "url": "ssh://tracteur-lab/tracteur/dotfiles-utils"
       },

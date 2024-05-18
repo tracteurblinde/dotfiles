@@ -20,7 +20,7 @@ let
       inherit system;
       modules = [
         ./common.nix
-        ./users.nix
+        (import ./users.nix { inherit host; })
         ./hosts/${host}.nix
         hostModule.config
         dotfiles-private.nixosCommon

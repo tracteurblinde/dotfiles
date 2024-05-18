@@ -1,14 +1,16 @@
 { config, inputs, lib, pkgs, ... }:
 
 {
+  networking.hostName = "aurora";
+  time.timeZone = "America/Los_Angeles";
+
   imports = [
+    ../role/desktop.nix
     inputs.nixos-hardware.nixosModules.microsoft-surface-common
   ];
 
   microsoft-surface.surface-control.enable = true;
   microsoft-surface.kernelVersion = "6.8.9";
-
-  networking.hostName = "aurora";
 
   # Unfree packages
   nixpkgs.allowUnfreePackages = [

@@ -1,3 +1,4 @@
+{ host }:
 { config, pkgs, lib, dotfiles-private, dotfiles-utils, ... }@inputs:
 let
   userModules = builtins.listToAttrs (
@@ -13,6 +14,12 @@ let
       )
       (builtins.attrNames dotfiles-private.users)
   );
+  hostUsernames = builtins.filter
+    (user:
+      # If the user has no hosts specified, they are assumed to be on all hosts.
+      builtins.elem host (userModules.${user}.hosts or [host])
+    )
+    (builtins.attrNames userModules);
   generateNixOSUserAccounts = builtins.listToAttrs (
     builtins.map
       (user:
@@ -21,7 +28,7 @@ let
           value = userModules.${user}.nixosConfig;
         }
       )
-      (builtins.attrNames userModules)
+      hostUsernames
   );
   wheeledUserAccounts = builtins.filter (user: user != null) (
     builtins.map
@@ -30,7 +37,7 @@ let
         then user
         else null
       )
-      (builtins.attrNames userModules)
+      hostUsernames
   );
 in
 {
