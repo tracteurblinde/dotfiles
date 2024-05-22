@@ -25,17 +25,14 @@
       "inputs": {
         "dotfiles-utils": [
           "dotfiles-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs-unstable"
         ]
       },
       "locked": {
-        "lastModified": 1716059307,
-        "narHash": "sha256-4cd7GvgW4zzn81ef1XTGMi2BjTrJk0fB9xx9JL85He8=",
+        "lastModified": 1716361104,
+        "narHash": "sha256-Hp4DdDanMcL0BUDr4Ta2ov6OeF4vFP3X/vysyH+7d7Q=",
         "ref": "refs/heads/main",
-        "rev": "5cfcf4e54e91788949e1338ac20482af69e0bcbc",
-        "revCount": 13,
+        "rev": "916357304d785c6099ff79a114076a7c411f205a",
+        "revCount": 17,
         "type": "git",
         "url": "ssh://tracteur-lab/tracteur/dotfiles-private"
       },
@@ -268,11 +265,11 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1716034089,
-        "narHash": "sha256-QBfab6V4TeQ6Y4NiXVrEATdQuhCNFNaXt/L1K/Zw+zc=",
+        "lastModified": 1716173274,
+        "narHash": "sha256-FC21Bn4m6ctajMjiUof30awPBH/7WjD0M5yqrWepZbY=",
         "owner": "NixOS",
         "repo": "nixos-hardware",
-        "rev": "b55712de78725c8fcde422ee0a0fe682046e73c3",
+        "rev": "d9e0b26202fd500cf3e79f73653cce7f7d541191",
         "type": "github"
       },
       "original": {
@@ -284,11 +281,11 @@
     },
     "nixos-unstable": {
       "locked": {
-        "lastModified": 1715961556,
-        "narHash": "sha256-+NpbZRCRisUHKQJZF3CT+xn14ZZQO+KjxIIanH3Pvn4=",
+        "lastModified": 1716293225,
+        "narHash": "sha256-pU9ViBVE3XYb70xZx+jK6SEVphvt7xMTbm6yDIF4xPs=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "4a6b83b05df1a8bd7d99095ec4b4d271f2956b64",
+        "rev": "3eaeaeb6b1e08a016380c279f8846e0bd8808916",
         "type": "github"
       },
       "original": {
@@ -316,11 +313,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1715996989,
-        "narHash": "sha256-ObD9YSelkwCAylEXJHcNjrn3hLOfIVScB1tPz9zeDN8=",
+        "lastModified": 1716312448,
+        "narHash": "sha256-PH3w5av8d+TdwCkiWN4UPBTxrD9MpxIQPDVWctlomVo=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "63d3e5d82edf5a138e7d0872231cc23ed4e740fd",
+        "rev": "e381a1288138aceda0ac63db32c7be545b446921",
         "type": "github"
       },
       "original": {

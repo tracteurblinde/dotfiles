@@ -21,7 +21,6 @@
     dotfiles-utils.url = "git+ssh://tracteur-lab/tracteur/dotfiles-utils";
     dotfiles-private = {
       url = "git+ssh://tracteur-lab/tracteur/dotfiles-private";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
       inputs.dotfiles-utils.follows = "dotfiles-utils";
     };
 
