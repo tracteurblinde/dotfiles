@@ -40,7 +40,7 @@ let
       };
     };
 
-  hosts = dotfiles-utils.findNixFilesInDir ./hosts;
+  hosts = builtins.attrNames dotfiles-private.hosts;
 in
 {
   generateNixOSConfigs = builtins.listToAttrs (
