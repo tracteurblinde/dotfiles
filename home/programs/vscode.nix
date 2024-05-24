@@ -22,6 +22,8 @@
       "editor.fontFamily" = "'MonaspiceNe Nerd Font Mono', 'monospace', monospace";
       "git.autofetch" = true;
       "git.confirmSync" = false;
+      "github.copilot.chat.scopeSelection" = true;
+      "github.copilot.editor.enableAutoCompletions" = true;
       "github.copilot.enable" = {
         "*" = true;
         "plaintext" = false;
