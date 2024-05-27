@@ -8,6 +8,7 @@
     userSettings = {
       "catppuccin.accentColor" = "mauve";
       "cSpell.enableFiletypes" = [ "nix" ];
+      "cSpell.textDecorationStyle" = "dashed";
       "cSpell.userWords" = [
         "tracteur"
         "blindé"
