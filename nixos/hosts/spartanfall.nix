@@ -50,4 +50,6 @@
 
   # Talon Voice
   programs.talon.enable = true;
+
+  services.openssh.enable = true;
 }
