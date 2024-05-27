@@ -1,6 +1,11 @@
 { config, pkgs, lib, ... }:
 
 {
+  home.packages = with pkgs; [
+    blender
+  ];
+
+
   # Talon wants to be able to write to this directory :/
   #   home.file.".talon/user/community" = {
   #     source = pkgs.fetchFromGitHub
