@@ -9,6 +9,9 @@
       "catppuccin.accentColor" = "mauve";
       "cSpell.enableFiletypes" = [ "nix" ];
       "cSpell.userWords" = [
+        "tracteur"
+        "blindé"
+        "tracteurblinde"
         "devshell"
         "nixos"
         "nixpkgs"
