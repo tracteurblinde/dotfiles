@@ -82,7 +82,7 @@ in
     };
     "org/gnome/desktop/interface" = {
       "color-scheme" = "prefer-dark";
-      "cursor-theme" = "Catppuccin-Mocha-Mauve-Cursors";
+      "cursor-theme" = "catppuccin-mocha-mauve-cursors";
       "icon-theme" = "Papirus-Dark";
       "gtk-theme" = "Catppuccin-Mocha-Compact-Mauve-Dark";
 
