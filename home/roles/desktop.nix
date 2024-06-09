@@ -40,6 +40,7 @@
     kitty-themes
 
     # Productivity Suite
+    anki-bin
     cura
     chromium
     libreoffice
