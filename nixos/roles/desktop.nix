@@ -126,6 +126,7 @@
     busybox
 
     fcitx5
+    gnome-network-displays
     input-leap
 
     # Gaming
