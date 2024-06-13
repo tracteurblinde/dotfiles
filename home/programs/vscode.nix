@@ -62,6 +62,7 @@
 
       # Python
       ms-python.black-formatter
+      ms-python.debugpy
       ms-python.isort
       ms-python.python
       ms-python.vscode-pylance
@@ -97,14 +98,8 @@
       {
         name = "cursorless";
         publisher = "pokey";
-        version = "0.28.1096";
-        sha256 = "BCgtVPd3BYmZqOjiK3fG8NzNqG8aNxKGwvMVnZ89xGw=";
-      }
-      {
-        name = "debugpy";
-        publisher = "ms-python";
-        version = "2024.4.0";
-        sha256 = "Ac6bQB+mIoXMa6bQpkK+WjFbR/fmjsZVWdtyYD0bipQ=";
+        version = "0.28.1123";
+        sha256 = "skmhtIvCgey+XQBMmL57yArrvK7TbmPsy/CLkMiBwzE=";
       }
       {
         name = "parse-tree";
@@ -119,12 +114,6 @@
         sha256 = "lvds+lFDzt1s6RikhrnAKJipRHU+Dk85ZO49d1sA8uo=";
       }
       {
-        name = "rust-targets";
-        publisher = "polymeilex";
-        version = "1.1.1";
-        sha256 = "htmIQhtig5tunUwonow7xqRUXoCE6faEOzK0h6NXM20=";
-      }
-      {
         name = "remote-explorer";
         publisher = "ms-vscode";
         version = "0.4.3";
@@ -135,6 +124,12 @@
         publisher = "ms-vscode-remote";
         version = "0.86.0";
         sha256 = "JsbaoIekUo2nKCu+fNbGlh5d1Tt/QJGUuXUGP04TsDI=";
+      }
+      {
+        name = "rust-targets";
+        publisher = "polymeilex";
+        version = "1.1.1";
+        sha256 = "htmIQhtig5tunUwonow7xqRUXoCE6faEOzK0h6NXM20=";
       }
       {
         name = "tauri-vscode";
@@ -151,8 +146,8 @@
       {
         name = "vscode-mogami";
         publisher = "ninoseki";
-        version = "0.0.17";
-        sha256 = "3PPJbckx1xg6116RMQ4RTWQY3ovqU2NkzPYPedxRtJs=";
+        version = "0.0.26";
+        sha256 = "9Fh4AEeo/5eVYsmwm1NJW16ZWQ9odzx69uWGP46wYug=";
       }
     ];
   };
