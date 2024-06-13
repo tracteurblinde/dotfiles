@@ -8,7 +8,6 @@
     inputs.nixos-hardware.nixosModules.microsoft-surface-common
   ];
 
-  microsoft-surface.kernelVersion = "6.8.9";
   microsoft-surface.ipts.enable = true;
   microsoft-surface.surface-control.enable = true;
 
