@@ -20,16 +20,18 @@
     "xow_dongle-firmware"
   ];
 
-  hardware.opengl.extraPackages = with pkgs; [
-    amdvlk
-    rocm-opencl-icd
-    rocm-opencl-runtime
-    intel-compute-runtime
-    intel-media-driver
-  ];
-  hardware.opengl.extraPackages32 = with pkgs; [
-    driversi686Linux.amdvlk
-  ];
+  hardware.graphics = {
+    extraPackages = with pkgs; [
+      amdvlk
+      rocmPackages.clr.icd
+      intel-compute-runtime
+      intel-media-driver
+    ];
+    extraPackages32 = with pkgs.driversi686Linux; [
+      amdvlk
+      intel-media-driver
+    ];
+  };
   environment.variables.AMD_VULKAN_ICD = "RADV";
 
   environment.systemPackages = with pkgs; [

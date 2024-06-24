@@ -32,12 +32,15 @@
     };
   };
 
-  # Make sure opengl is enabled
-  hardware.opengl = {
+  # Enable HW Graphics acceleration
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [
+      vaapiVdpau
+      libvdpau-va-gl
+    ];
+    extraPackages32 = with pkgs.driversi686Linux; [
       vaapiVdpau
       libvdpau-va-gl
     ];

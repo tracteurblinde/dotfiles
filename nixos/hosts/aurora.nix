@@ -60,9 +60,15 @@
     modules = [ pkgs.xf86_input_wacom ];
   };
 
-  hardware.opengl.extraPackages = with pkgs; [
-    intel-media-driver
-  ];
+  hardware.graphics = {
+    extraPackages = with pkgs; [
+      intel-compute-runtime
+      intel-media-driver
+    ];
+    extraPackages32 = with pkgs.driversi686Linux; [
+      intel-media-driver
+    ];
+  };
 
   programs.light.enable = true; # backlight
 
