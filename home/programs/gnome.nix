@@ -77,14 +77,14 @@ in
       "switch-to-workspace-right" = [ "<Control><Super>Right" ];
     };
     "org/gnome/desktop/wm/preferences" = {
-      "theme" = "Catppuccin-Mocha-Compact-Mauve-Dark";
+      "theme" = "catppuccin-mocha-mauve-compact+rimless,normal";
       "titlebar-font" = "LiterationSans Nerd Font Propo Bold 11";
     };
     "org/gnome/desktop/interface" = {
       "color-scheme" = "prefer-dark";
       "cursor-theme" = "catppuccin-mocha-mauve-cursors";
       "icon-theme" = "Papirus-Dark";
-      "gtk-theme" = "Catppuccin-Mocha-Compact-Mauve-Dark";
+      "gtk-theme" = "catppuccin-mocha-mauve-compact+rimless,normal";
 
       "font-antialiasing" = "rgba";
       "font-name" = "LiterationSans Nerd Font Propo 10";
