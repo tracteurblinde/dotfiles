@@ -8,9 +8,6 @@
     inputs.nixos-hardware.nixosModules.microsoft-surface-common
   ];
 
-  microsoft-surface.ipts.enable = true;
-  microsoft-surface.surface-control.enable = true;
-
   # Unfree packages
   nixpkgs.allowUnfreePackages = [
     "nvidia-x11"
