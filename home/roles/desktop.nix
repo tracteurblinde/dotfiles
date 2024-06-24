@@ -15,6 +15,8 @@
     "parsec-bin"
     "slack"
 
+    "aspell-dict-en-science"
+
     "vscode"
     "vscode-extension-github-copilot"
     "vscode-extension-github-copilot-chat"
