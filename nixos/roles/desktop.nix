@@ -170,18 +170,17 @@
 
   # Disable a bunch of gnome packages we don't need
   environment.gnome.excludePackages = (with pkgs; [
+    cheese # webcam tool
+    epiphany # web browser
+    evince # document viewer
+    geary # email reader
     gnome-photos
+    gnome-terminal
     gnome-tour
     gedit # text editor
-  ]) ++ (with pkgs.gnome; [
-    cheese # webcam tool
-    gnome-music
-    gnome-terminal
-    epiphany # web browser
-    geary # email reader
-    evince # document viewer
-    #gnome-characters
     totem # video player
+  ]) ++ (with pkgs.gnome; [
+    gnome-music
     tali # poker game
     iagno # go game
     hitori # sudoku game

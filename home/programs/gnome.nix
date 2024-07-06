@@ -20,8 +20,8 @@ in
     catppuccin-icons-mauve-mocha
     catppuccin-cursors.mochaMauve
 
-    gnome.gnome-tweaks
-    gnome.gnome-themes-extra
+    gnome-tweaks
+    gnome-themes-extra
 
     gnomeExtensions.appindicator
     gnomeExtensions.gamemode-indicator-in-system-settings
