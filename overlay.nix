@@ -5,15 +5,16 @@ in
 rec {
   # nixpkgs only exposes cura 4 due to difficulties with the cura 5 build system
   # Just use the appimage for now
-  # From @MarSoft https://github.com/NixOS/nixpkgs/issues/186570#issuecomment-1627797219
+  # Based on @MarSoft https://github.com/NixOS/nixpkgs/issues/186570#issuecomment-1627797219
   cura = (
     let
       cura5 = pkgs.appimageTools.wrapType2 rec {
         name = "cura5";
-        version = "5.7.1";
+        version = "5.7.2";
+        tag = "${version}-RC2";
         src = pkgs.fetchurl {
-          url = "https://github.com/Ultimaker/Cura/releases/download/${version}/UltiMaker-Cura-${version}-linux-X64.AppImage";
-          hash = "sha256-LZMD0fo8TSlDEJspvTka724lYq5EgrOlDkwMktXqATw=";
+          url = "https://github.com/Ultimaker/Cura/releases/download/${tag}/UltiMaker-Cura-${version}-linux-X64.AppImage";
+          hash = "sha256-XlTcCmIqcfTg8fxM2KDik66qjIKktWet+94lFIJWopY=";
         };
         extraPkgs = pkgs: with pkgs; [ ];
       };
