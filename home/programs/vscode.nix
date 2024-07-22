@@ -69,7 +69,7 @@
 
       # Rust
       rust-lang.rust-analyzer
-      serayuzgur.crates
+      #serayuzgur.crates
       vadimcn.vscode-lldb
 
       # Typescript
@@ -98,14 +98,14 @@
       {
         name = "cursorless";
         publisher = "pokey";
-        version = "0.28.1123";
-        sha256 = "skmhtIvCgey+XQBMmL57yArrvK7TbmPsy/CLkMiBwzE=";
+        version = "0.28.1207";
+        sha256 = "sha256-2quqZe0Ax99iFTdB4RL0l6XhKLd//s9wyZtp8PZgsoQ=";
       }
       {
         name = "parse-tree";
         publisher = "pokey";
-        version = "0.30.0";
-        sha256 = "Sd/f7SRZNGpU0CeRbnHSVTtyX5pxefDBBFlvFjhfzoo=";
+        version = "0.31.1";
+        sha256 = "sha256-WasaTsumg2g06upRlA3NjdEjZkmL+OvxL7Trp3Gl+Sk=";
       }
       {
         name = "prettify-json";
@@ -146,8 +146,8 @@
       {
         name = "vscode-mogami";
         publisher = "ninoseki";
-        version = "0.0.26";
-        sha256 = "9Fh4AEeo/5eVYsmwm1NJW16ZWQ9odzx69uWGP46wYug=";
+        version = "0.0.29";
+        sha256 = "sha256-XSOiAMOYC2lUKv/xYYH/9pCRNMySD3pLp/HT/3F7pGo=";
       }
     ];
   };
