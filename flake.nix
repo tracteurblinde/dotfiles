@@ -53,7 +53,6 @@
     lanzaboote = {
       url = "github:nix-community/lanzaboote";
       inputs.nixpkgs.follows = "nixos-unstable";
-      inputs.flake-utils.follows = "flake-utils";
     };
 
     # Talon's NixOS module
