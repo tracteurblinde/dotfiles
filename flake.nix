@@ -36,7 +36,8 @@
     # NixOS Modules
     ##
     # Surface Patches
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    #nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    nixos-hardware.url = "github:tracteurblinde/nixos-hardware/surface-linux-6.9.9";
 
     lix = {
       url = "git+https://git@git.lix.systems/lix-project/lix?ref=refs/tags/2.90.0";

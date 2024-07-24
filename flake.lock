@@ -262,16 +262,16 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1721754224,
-        "narHash": "sha256-JEVfxzZRo+/zdWKBjHpAUG905SDZL9fmoLJxf9b5CGU=",
-        "owner": "NixOS",
+        "lastModified": 1721857745,
+        "narHash": "sha256-ITk5owJgeMngDbZ6Zm8HPxG+c8ADyxGNOGZZea/T5kQ=",
+        "owner": "tracteurblinde",
         "repo": "nixos-hardware",
-        "rev": "405b654893aba16c8014de6a17e84439d3fb8e46",
+        "rev": "9115b8f2e1daeb3974331bbf039dcfbc089f114b",
         "type": "github"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "master",
+        "owner": "tracteurblinde",
+        "ref": "surface-linux-6.9.9",
         "repo": "nixos-hardware",
         "type": "github"
       }
