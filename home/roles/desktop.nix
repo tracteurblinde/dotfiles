@@ -13,6 +13,7 @@
     "gitkraken"
     "obsidian"
     "parsec-bin"
+    "plex-desktop"
     "slack"
 
     "aspell-dict-en-science"
@@ -64,7 +65,7 @@
 
     # Media
     mpv
-    plex-media-player
+    plex-desktop
     streamlink
     tidal-hifi
 
