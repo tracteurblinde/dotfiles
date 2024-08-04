@@ -43,7 +43,7 @@
       flake = false;
     };
     lix-module = {
-      url = "git+https://git.lix.systems/lix-project/nixos-module";
+      url = "git+https://git.lix.systems/lix-project/nixos-module?ref=refs/tags/2.90.0";
       inputs.lix.follows = "lix";
       inputs.nixpkgs.follows = "nixos-unstable";
       inputs.flake-utils.follows = "flake-utils";
