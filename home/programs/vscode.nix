@@ -98,14 +98,14 @@
       {
         name = "cursorless";
         publisher = "pokey";
-        version = "0.28.1207";
-        sha256 = "sha256-2quqZe0Ax99iFTdB4RL0l6XhKLd//s9wyZtp8PZgsoQ=";
+        version = "0.29.1280";
+        sha256 = "sha256-+qe0lsIkCzBNK6eSEelxYnyZBQNrQb4D6uRhZvRGilg=";
       }
       {
         name = "parse-tree";
         publisher = "pokey";
-        version = "0.31.1";
-        sha256 = "sha256-WasaTsumg2g06upRlA3NjdEjZkmL+OvxL7Trp3Gl+Sk=";
+        version = "0.31.2";
+        sha256 = "sha256-FMy6LphLNnPkBn5qcKC6+B9BYdqpp27Zr+EX9lX/XK0=";
       }
       {
         name = "prettify-json";
@@ -146,8 +146,8 @@
       {
         name = "vscode-mogami";
         publisher = "ninoseki";
-        version = "0.0.29";
-        sha256 = "sha256-XSOiAMOYC2lUKv/xYYH/9pCRNMySD3pLp/HT/3F7pGo=";
+        version = "0.0.31";
+        sha256 = "sha256-gLWtbJTUs9hVpgF7TSN1HpUwILcZKVw6vw8KUjKs10U=";
       }
     ];
   };
