@@ -70,6 +70,9 @@ in
       ];
     };
     # Pretty Windows-y keybindings, since that's what we're familiar with
+    "org/gnome/shell/keybindings" = {
+      "show-screenshot-ui" = ["<Shift><Super>s"];
+    };
     "org/gnome/desktop/wm/keybindings" = {
       "move-to-workspace-left" = [ "<Shift><Control><Super>Left" ];
       "move-to-workspace-right" = [ "<Shift><Control><Super>Right" ];
