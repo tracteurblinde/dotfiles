@@ -66,7 +66,7 @@ in
         "librewolf.desktop"
         "kitty.desktop"
         "code.desktop"
-        "Trilium.desktop"
+        "obsidian.desktop"
       ];
     };
     # Pretty Windows-y keybindings, since that's what we're familiar with
