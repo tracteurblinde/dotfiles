@@ -10,7 +10,7 @@
   ];
 
   # Acknowledge insecure packages
-  nixpkgs.config.permittedInsecurePackages = [
+  nixpkgs.permittedInsecurePackages = [
   ];
 
   home.packages = with pkgs; [

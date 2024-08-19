@@ -26,7 +26,10 @@
   ];
 
   # Acknowledge insecure packages
-  nixpkgs.config.permittedInsecurePackages = [
+  nixpkgs.permittedInsecurePackages = [
+    "olm-3.2.16" # RIP OLM
+    "jitsi-meet-1.0.8043" # Required by element-desktop
+    "fluffychat-linux-1.20.0"
   ];
 
   home.packages = with pkgs; [
