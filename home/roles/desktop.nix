@@ -53,6 +53,7 @@
     fluent-reader
     krita
     obsidian
+    peazip
     qbittorrent
     qdirstat
     tenacity
