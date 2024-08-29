@@ -82,6 +82,7 @@
 
     # Development GUI
     gitkraken
+    gnome-multi-writer
     rpi-imager
 
     # Development CLI
