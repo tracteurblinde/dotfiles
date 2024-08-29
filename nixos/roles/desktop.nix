@@ -178,7 +178,6 @@
     gnome-tour
     gedit # text editor
     totem # video player
-  ]) ++ (with pkgs.gnome; [
     gnome-music
     tali # poker game
     iagno # go game
