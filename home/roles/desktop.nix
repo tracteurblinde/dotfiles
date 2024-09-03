@@ -4,6 +4,7 @@
     ../programs/gnome.nix
     #../programs/hyprland.nix
     ../programs/librewolf.nix
+    #../programs/thunderbird.nix
     ../programs/vscode.nix
   ];
 
