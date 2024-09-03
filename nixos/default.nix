@@ -1,4 +1,4 @@
-{ nixpkgs, dotfiles-private, dotfiles-utils, ... }@inputs:
+{ nixpkgs, dotfiles-private, utils, ... }@inputs:
 let
   lib = nixpkgs.lib;
   mkOSConfig = host:
@@ -31,12 +31,13 @@ let
         inputs.lix-module.nixosModules.default
         inputs.talon-nix.nixosModules.talon
 
-        dotfiles-utils.unfreeMerger
+        utils.nixpkgsMerger
       ] ++ publicHostModule ++ roleModule;
 
-      # Make flake inputs and dotfiles-utils available in modules.
+      # Make flake inputs available in modules.
       specialArgs = {
-        inherit inputs dotfiles-private dotfiles-utils;
+        inherit inputs dotfiles-private;
+        dotfiles-utils = utils;
       };
     };
 

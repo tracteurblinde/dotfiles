@@ -17,10 +17,6 @@ The dotfiles-private flake separates out the private configuration from the publ
   description = "Private dotfiles";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    dotfiles-utils = {
-      url = "github:tracteurblinde/dotfiles-utils";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
   outputs = { ... } :
   let
@@ -38,9 +34,9 @@ The dotfiles-private flake separates out the private configuration from the publ
           home.homeDirectory = "/home/<username>";
         };
       };
-      # Or use dotfiles-utils.generateUser which will also initialize git
+      # Or use utils.generateUser which will also initialize git
       #   and setup the account picture and desktop background.
-      "<userB"> = dotfiles-utils.generateUser rec {
+      "<userB"> = utils.generateUser rec {
         inherit pkgs;
         name = "<Display Name>";
         username = "<username>";

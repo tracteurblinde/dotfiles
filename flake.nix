@@ -16,12 +16,10 @@
     systems.url = "github:nix-systems/default-linux";
 
     ##
-    # Tracteur's utils and secrets
+    # Tracteur's secrets
     ##
-    dotfiles-utils.url = "git+ssh://tracteur-lab/tracteur/dotfiles-utils";
     dotfiles-private = {
       url = "git+ssh://tracteur-lab/tracteur/dotfiles-private";
-      inputs.dotfiles-utils.follows = "dotfiles-utils";
     };
 
     ##
@@ -98,10 +96,13 @@
 
   outputs = inputs@{ nixos-unstable, nixpkgs-unstable, ... }:
     let
-      nixos-config = import ./nixos (inputs // { nixpkgs = nixos-unstable; });
+      utils = import ./utils.nix { inherit inputs; };
+      base_inputs = inputs // { utils = utils; };
+
+      nixos-config = import ./nixos (base_inputs // { nixpkgs = nixos-unstable; });
       inherit (nixos-config) generateNixOSConfigs;
 
-      home-config = import ./home (inputs // { nixpkgs = nixpkgs-unstable; });
+      home-config = import ./home (base_inputs // { nixpkgs = nixpkgs-unstable; });
       inherit (home-config) generateHomeManagerConfigs;
     in
     {

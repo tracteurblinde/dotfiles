@@ -22,38 +22,18 @@
       }
     },
     "dotfiles-private": {
-      "inputs": {
-        "dotfiles-utils": [
-          "dotfiles-utils"
-        ]
-      },
       "locked": {
-        "lastModified": 1724282139,
-        "narHash": "sha256-txwcQ1CKwX6VOaf/hSx94ETyEnkOQfWgu13MMusUdD0=",
+        "lastModified": 1725387353,
+        "narHash": "sha256-WXax/M4/uXY3etzxM27rQuGTkdPMgzuXlHsRAQOIT74=",
         "ref": "refs/heads/main",
-        "rev": "2166dc2502b95df4e5e7963a257f2fe6e61f1640",
-        "revCount": 22,
+        "rev": "0729df457b7c078d022523cc2d04ec022a5cc90c",
+        "revCount": 23,
         "type": "git",
         "url": "ssh://tracteur-lab/tracteur/dotfiles-private"
       },
       "original": {
         "type": "git",
         "url": "ssh://tracteur-lab/tracteur/dotfiles-private"
-      }
-    },
-    "dotfiles-utils": {
-      "locked": {
-        "lastModified": 1724099174,
-        "narHash": "sha256-3UyFqgTfbR/4Ch8bNP+IzkRqEPjsp+m0FgPoqTKRNXg=",
-        "ref": "refs/heads/main",
-        "rev": "3e7cc9f8c663c3f76557a81c28c6f4b8f7aed189",
-        "revCount": 5,
-        "type": "git",
-        "url": "ssh://tracteur-lab/tracteur/dotfiles-utils"
-      },
-      "original": {
-        "type": "git",
-        "url": "ssh://tracteur-lab/tracteur/dotfiles-utils"
       }
     },
     "flake-compat": {
@@ -355,7 +335,6 @@
     "root": {
       "inputs": {
         "dotfiles-private": "dotfiles-private",
-        "dotfiles-utils": "dotfiles-utils",
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "lanzaboote": "lanzaboote",

@@ -1,4 +1,4 @@
-{ nixpkgs, home-manager, dotfiles-private, dotfiles-utils, ... }@inputs:
+{ nixpkgs, home-manager, utils, dotfiles-private, ... }@inputs:
 let
   lib = nixpkgs.lib;
   mkHomeConfig = user: host:
@@ -10,7 +10,7 @@ let
           (import ../overlay.nix)
         ];
       };
-      userModule = dotfiles-private.users.${user} { inherit pkgs dotfiles-utils; };
+      userModule = dotfiles-private.users.${user} { inherit pkgs; dotfiles-utils = utils; };
       hostModule = lib.optional (builtins.pathExists ./hosts/${host}.nix) ./hosts/${host}.nix;
       roleModule = lib.optional (builtins.pathExists ./roles/${dotfiles-private.hosts.${host}.role}.nix) ./roles/${dotfiles-private.hosts.${host}.role}.nix;
     in
@@ -21,11 +21,11 @@ let
         userModule.homeConfig
         dotfiles-private.homeCommon
         ./home.nix
-        dotfiles-utils.unfreeMerger
+        utils.nixpkgsMerger
       ] ++ hostModule ++ roleModule;
 
-      # Make flake inputs and dotfiles-utils available in modules.
-      extraSpecialArgs = { inherit inputs dotfiles-utils; };
+      # Make flake inputs available in modules.
+      extraSpecialArgs = { inherit inputs; };
     };
 
   users = builtins.attrNames dotfiles-private.users;
