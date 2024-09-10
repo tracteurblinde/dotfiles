@@ -78,7 +78,7 @@
 
   services.udev = {
     # Gnome udev rules
-    packages = [ pkgs.gnome.gnome-settings-daemon ];
+    packages = [ pkgs.gnome-settings-daemon ];
 
     extraRules = ''
       # Allow users raw HID access to ZSA keyboards
