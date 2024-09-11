@@ -37,6 +37,8 @@
       "terminal.integrated.defaultProfile.linux" = "zsh";
       "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "catppuccin-mocha";
+
+      # Python
       "black-formatter.args" = [ "--line-length=119" ];
       "isort.args" = [ "--profile" "black" "--line-length" "119" "--skip-gitignore" ];
       "[python]" = {
@@ -46,6 +48,8 @@
         "editor.defaultFormatter" = "ms-python.black-formatter";
       };
 
+      # Typescript
+      "svelte.enable-ts-plugin" = true;
     };
 
     extensions = with pkgs.vscode-extensions; [
