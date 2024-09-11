@@ -82,7 +82,8 @@
       tamasfe.even-better-toml
       yzhang.markdown-all-in-one
 
-      # Copilot
+      # Exploring AI Tools
+      continue.continue
       github.copilot
       github.copilot-chat
 
