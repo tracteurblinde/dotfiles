@@ -4,7 +4,7 @@
     ../programs/gnome.nix
     #../programs/hyprland.nix
     ../programs/librewolf.nix
-    #../programs/thunderbird.nix
+    ../programs/thunderbird.nix
     ../programs/vscode.nix
   ];
 
@@ -122,7 +122,7 @@
 
   programs.kitty = {
     enable = true;
-    theme = "Catppuccin-Mocha";
+    themeFile = "Catppuccin-Mocha";
     font.name = "MonaspiceKr Nerd Font Mono";
     shellIntegration = {
       enableBashIntegration = true;
