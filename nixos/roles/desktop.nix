@@ -194,6 +194,14 @@
   #   portalPackage = inputs.xdg-desktop-portal-hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
   # };
 
+  xdg.portal.enable = true;
+  xdg.portal.xdgOpenUsePortal = true;
+  xdg.portal.extraPortals = with pkgs; [
+    xdg-desktop-portal-kde
+    xdg-desktop-portal-gnome
+    xdg-desktop-portal-wlr
+  ];
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = false; # Open ports in the firewall for Steam Remote Play
