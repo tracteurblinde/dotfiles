@@ -40,17 +40,4 @@ rec {
       vba-next
     ];
   };
-
-  # WA for https://github.com/NixOS/nixpkgs/pull/342528 by swapping to dlundqvist's fork
-  linuxPackages_latest = pkgs.linuxPackages_latest.extend (self: super: {
-    xone = super.xone.overrideAttrs (o: {
-      version = "0.3-unstable-2024-09-06";
-      src = pkgs.fetchFromGitHub {
-        owner = "dlundqvist";
-        repo = "xone";
-        rev = "f6f30b7b30fd44d004d2e0079d9cda3a65b524fa";
-        hash = "sha256-9DV/Twpt6fNDpqFpRxMJKo9bpa1Yu4RIYRld98xBR90=";
-      };
-    });
-  });
 }
