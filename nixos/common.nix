@@ -33,6 +33,8 @@
     wget
     htop
     busybox
+
+    nixpkgs-fmt
   ];
 
   programs.zsh.enable = true;
