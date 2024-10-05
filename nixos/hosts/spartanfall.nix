@@ -55,4 +55,5 @@
   programs.talon.enable = true;
 
   services.openssh.enable = true;
+  services.vscode-server.enable = true; #VSCode WA
 }

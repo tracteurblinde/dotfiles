@@ -36,6 +36,9 @@
     # Surface Patches
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
+    # Allow VSCode remoting
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
+
     lix = {
       url = "git+https://git@git.lix.systems/lix-project/lix?ref=refs/tags/2.91.0";
       flake = false;

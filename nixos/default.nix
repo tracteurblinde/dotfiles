@@ -30,6 +30,7 @@ let
         inputs.lanzaboote.nixosModules.lanzaboote
         inputs.lix-module.nixosModules.default
         inputs.talon-nix.nixosModules.talon
+        inputs.vscode-server.nixosModules.default
 
         utils.nixpkgsMerger
       ] ++ publicHostModule ++ roleModule;
