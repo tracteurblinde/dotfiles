@@ -61,6 +61,7 @@
       aaron-bond.better-comments
       eamodio.gitlens
       mkhl.direnv
+      shardulm94.trailing-spaces
       twxs.cmake
       wakatime.vscode-wakatime
 
