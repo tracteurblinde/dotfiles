@@ -56,4 +56,12 @@
 
   services.openssh.enable = true;
   services.vscode-server.enable = true; #VSCode WA
+
+  # Docker
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+  # Adds all users in the wheel group to the docker group
+  users.extraGroups.docker.members = config.nix.settings.trusted-users;
 }
