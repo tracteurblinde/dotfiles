@@ -37,7 +37,10 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     # Allow VSCode remoting
-    vscode-server.url = "github:nix-community/nixos-vscode-server";
+    vscode-server = {
+      url = "github:nix-community/nixos-vscode-server";
+      inputs.flake-utils.follows = "flake-utils";
+    };
 
     lix = {
       url = "git+https://git@git.lix.systems/lix-project/lix?ref=refs/tags/2.91.0";
