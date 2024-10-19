@@ -113,8 +113,7 @@
   # Unfree packages
   nixpkgs.allowUnfreePackages = [
     "steam"
-    "steam-original"
-    "steam-run"
+    "steam-unwrapped"
     "vista-fonts"
   ];
 
@@ -212,4 +211,13 @@
       };
     };
   };
+
+  # virtualisation.virtualbox.host = {
+  #   enable = true;
+  #   enableKvm = true;
+  #   enableHardening = true;
+  #   enableWebService = true;
+  #   addNetworkInterface = false; # Required for VirtualBox-KVM
+  # };
+  # boot.kernelParams = [ "split_lock_detect=off" ]; # Required for VirtualBox-KVM
 }
