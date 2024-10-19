@@ -35,6 +35,11 @@
     busybox
 
     nixpkgs-fmt
+
+    # For USB Drives
+    ntfs3g
+    exfat
+    exfatprogs
   ];
 
   programs.zsh.enable = true;
