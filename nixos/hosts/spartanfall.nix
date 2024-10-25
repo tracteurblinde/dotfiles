@@ -34,6 +34,8 @@
   };
   environment.variables.AMD_VULKAN_ICD = "RADV";
 
+  hardware.bluetooth.enable = true;
+
   environment.systemPackages = with pkgs; [
     # Logitech Mouse Configurator
     solaar
