@@ -46,6 +46,8 @@
     ];
   };
 
+  services.input-remapper.enable = true;
+
   services.libinput = {
     enable = true;
     touchpad = {
@@ -114,6 +116,7 @@
   nixpkgs.allowUnfreePackages = [
     "steam"
     "steam-unwrapped"
+    "steam-run"
     "vista-fonts"
   ];
 
@@ -143,6 +146,7 @@
     })
     mangohud
     protontricks
+    steam-run
     winetricks
     wineWowPackages.stable
     wineWowPackages.waylandFull
