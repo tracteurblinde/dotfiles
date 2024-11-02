@@ -59,7 +59,7 @@
 
           export TERMINAL_CONFIGURED=1
       fi
-    '';ec
+    '';
 
     shellAliases = {
       ls = "eza";
