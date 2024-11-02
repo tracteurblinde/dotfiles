@@ -189,7 +189,10 @@
   ]);
 
   programs.adb.enable = true;
-  programs.gamemode.enable = true;
+  programs.gamemode = {
+    enable = true;
+    settings.general.disable_splitlock = 1;
+  };
 
   # programs.hyprland = {
   #   enable = true;
