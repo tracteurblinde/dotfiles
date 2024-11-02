@@ -48,14 +48,18 @@
     ];
 
     initExtra = ''
-      # Powerlevel10k config
-      source ~/.config/zsh/.p10k.zsh
+      if [[ -z "$TERMINAL_CONFIGURED" ]]; then
+          # Powerlevel10k config
+          source ~/.config/zsh/.p10k.zsh
 
-      # When using kitty, use kitty's ssh wrapper
-      [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+          # When using kitty, use kitty's ssh wrapper
+          [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
-      export PATH="$PATH''${PATH:+:}${lib.concatStringsSep ":" config.home.sessionPath}"
-    '';
+          export PATH="$PATH''${PATH:+:}${lib.concatStringsSep ":" config.home.sessionPath}"
+
+          export TERMINAL_CONFIGURED=1
+      fi
+    '';ec
 
     shellAliases = {
       ls = "eza";

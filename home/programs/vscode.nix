@@ -41,6 +41,7 @@
       # Python
       "black-formatter.args" = [ "--line-length=119" ];
       "isort.args" = [ "--profile" "black" "--line-length" "119" "--skip-gitignore" ];
+      "python.terminal.activateEnvironment" = false; # Interferes with direnv
       "[python]" = {
         "editor.codeActionsOnSave" = {
           "source.organizeImports" = "explicit";
