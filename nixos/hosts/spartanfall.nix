@@ -33,8 +33,20 @@
     ];
   };
   environment.variables.AMD_VULKAN_ICD = "RADV";
+  # programs.steam.extraEnv = {
+  #  #DXVK_ASYNC = true;
+  #  #DXVK_FILTER_DEVICE_NAME = "AMD Radeon RX 6900 XT";
+  #  VK_DRIVER_FILES = "${pkgs.amdvlk}/share/vulkan/icd.d/amd_icd64.json";
+  #};
 
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     # Logitech Mouse Configurator

@@ -69,7 +69,14 @@
 
   programs.light.enable = true; # backlight
 
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
 
   services.iptsd.enable = true;
   services.switcherooControl.enable = true; # switch between iGPU and dGPU
