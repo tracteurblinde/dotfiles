@@ -27,7 +27,6 @@ in
     gnomeExtensions.gamemode-indicator-in-system-settings
     gnomeExtensions.gsconnect
     gnomeExtensions.kimpanel
-    gnomeExtensions.openweather # Currently disabled while waiting on Gnome 45 support
     gnomeExtensions.tiling-assistant
     gnomeExtensions.transparent-window-moving
   ];
