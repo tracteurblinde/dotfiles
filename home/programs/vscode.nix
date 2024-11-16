@@ -24,6 +24,7 @@
       "diffEditor.ignoreTrimWhitespace" = false;
       "editor.formatOnSave" = true;
       "editor.fontFamily" = "'MonaspiceNe Nerd Font Mono', 'monospace', monospace";
+      "editor.tabSize" = 4;
       "git.autofetch" = true;
       "git.confirmSync" = false;
       "github.copilot.chat.scopeSelection" = true;
