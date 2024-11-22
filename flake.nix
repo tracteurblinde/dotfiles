@@ -42,13 +42,8 @@
       inputs.flake-utils.follows = "flake-utils";
     };
 
-    lix = {
-      url = "git+https://git@git.lix.systems/lix-project/lix?ref=refs/tags/2.91.0";
-      flake = false;
-    };
     lix-module = {
-      url = "git+https://git.lix.systems/lix-project/nixos-module?ref=refs/tags/2.91.0";
-      inputs.lix.follows = "lix";
+      url = "git+https://git.lix.systems/lix-project/nixos-module?ref=refs/tags/2.91.1-1";
       inputs.nixpkgs.follows = "nixos-unstable";
       inputs.flake-utils.follows = "flake-utils";
     };
