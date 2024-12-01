@@ -35,9 +35,7 @@ rec {
     ''
   );
 
-  retroarch = pkgs.retroarch.override {
-    cores = with pkgs.libretro; [
-      vba-next
-    ];
-  };
+  retroarch = pkgs.retroarch.withCores (cores: with cores; [
+    vba-next
+  ]);
 }
