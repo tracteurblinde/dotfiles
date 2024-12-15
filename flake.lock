@@ -17,11 +17,11 @@
     },
     "dotfiles-private": {
       "locked": {
-        "lastModified": 1734295949,
-        "narHash": "sha256-7iO3vyz5cSgLY8y+O8+yNvfSo/Y7GWT8EzPcVM4M8SA=",
+        "lastModified": 1734300238,
+        "narHash": "sha256-eFFXTwccBTxd2m3sdYaALfbjgPlOo+ZE3DuB1MshrKE=",
         "ref": "refs/heads/main",
-        "rev": "f2ac477f6b061c993e05b7d52259dae17e4c9b3d",
-        "revCount": 25,
+        "rev": "9078fdcf29ad4a22df54f1708fce9ac97821c9b2",
+        "revCount": 26,
         "type": "git",
         "url": "ssh://tracteur-lab/tracteur/dotfiles-private"
       },
@@ -248,11 +248,11 @@
     },
     "nixos-unstable": {
       "locked": {
-        "lastModified": 1733940404,
-        "narHash": "sha256-Pj39hSoUA86ZePPF/UXiYHHM7hMIkios8TYG29kQT4g=",
+        "lastModified": 1734119587,
+        "narHash": "sha256-AKU6qqskl0yf2+JdRdD0cfxX4b9x3KKV5RqA6wijmPM=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "5d67ea6b4b63378b9c13be21e2ec9d1afc921713",
+        "rev": "3566ab7246670a43abd2ffa913cc62dad9cdf7d5",
         "type": "github"
       },
       "original": {
@@ -294,11 +294,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1733935885,
-        "narHash": "sha256-xyiHLs6KJ1fxeGmcCxKjJE4yJknVJxbC8Y/ZRYyC8WE=",
+        "lastModified": 1734126203,
+        "narHash": "sha256-0XovF7BYP50rTD2v4r55tR5MuBLet7q4xIz6Rgh3BBU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "5a48e3c2e435e95103d56590188cfed7b70e108c",
+        "rev": "71a6392e367b08525ee710a93af2e80083b5b3e2",
         "type": "github"
       },
       "original": {
