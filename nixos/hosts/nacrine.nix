@@ -12,7 +12,6 @@
 
   boot.extraModprobeConfig = "options kvm_intel nested=1";
   boot.initrd.kernelModules = [ "i915" ];
-  boot.zfs.enable = true;
 
   hardware.nvidia = {
     open = true;
