@@ -11,15 +11,10 @@
   ];
 
   boot.extraModprobeConfig = "options kvm_intel nested=1";
-
   boot.initrd.kernelModules = [ "i915" ];
-
-  nixpkgs.allowUnfreePackages = [
-    "xow_dongle-firmware"
-  ];
+  boot.zfs.enable = true;
 
   hardware.nvidia = {
-
     open = true;
   };
 
