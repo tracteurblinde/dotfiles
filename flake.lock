@@ -17,11 +17,11 @@
     },
     "dotfiles-private": {
       "locked": {
-        "lastModified": 1725387353,
-        "narHash": "sha256-WXax/M4/uXY3etzxM27rQuGTkdPMgzuXlHsRAQOIT74=",
+        "lastModified": 1734236526,
+        "narHash": "sha256-sssKgMtvjHsMtGeUCnKrfWyyX8FUANGjHj5cTpmJWUw=",
         "ref": "refs/heads/main",
-        "rev": "0729df457b7c078d022523cc2d04ec022a5cc90c",
-        "revCount": 23,
+        "rev": "f48886422eb513a374d6daf0750cef434f448002",
+        "revCount": 24,
         "type": "git",
         "url": "ssh://tracteur-lab/tracteur/dotfiles-private"
       },
