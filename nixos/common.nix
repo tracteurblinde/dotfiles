@@ -48,6 +48,8 @@
     nix-direnv.enable = true;
   };
 
+  programs.nix-ld.enable = true;
+
   programs.virt-manager.enable = true;
   virtualisation.libvirtd.enable = true;
 
