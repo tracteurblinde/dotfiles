@@ -12,6 +12,7 @@
 
   boot.extraModprobeConfig = "options kvm_intel nested=1";
   boot.initrd.kernelModules = [ "i915" ];
+  boot.supportedFilesystems = [ "zfs" ];
 
   hardware.nvidia = {
     open = true;
@@ -23,6 +24,11 @@
 
   services.openssh.enable = true;
   services.vscode-server.enable = true; #VSCode WA
+
+  services.zfs = {
+    autoScrub.enable = true;
+    trim.enable = true;
+  };
 
   # Docker
   virtualisation.docker = {
