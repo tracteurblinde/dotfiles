@@ -8,14 +8,27 @@
   nixpkgs.allowUnfreePackages = [
     "nvidia-x11"
     "nvidia-settings"
+    "nvidia-persistenced"
   ];
 
   boot.extraModprobeConfig = "options kvm_intel nested=1";
   boot.initrd.kernelModules = [ "i915" ];
   boot.supportedFilesystems = [ "zfs" ];
 
+  services.xserver.videoDrivers = [ "nvidia" ];
+
   hardware.nvidia = {
     open = true;
+  };
+
+  hardware.graphics = {
+    extraPackages = with pkgs; [
+      intel-compute-runtime
+      intel-media-driver
+    ];
+    extraPackages32 = with pkgs.driversi686Linux; [
+      intel-media-driver
+    ];
   };
 
 
