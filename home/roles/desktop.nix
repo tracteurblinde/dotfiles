@@ -29,7 +29,7 @@
   # Acknowledge insecure packages
   nixpkgs.permittedInsecurePackages = [
     "olm-3.2.16" # Required for element-desktop (and fluffychat?)
-    "fluffychat-linux-1.22.1"
+    "fluffychat-linux-1.23.0"
   ];
 
   home.packages = with pkgs; [
