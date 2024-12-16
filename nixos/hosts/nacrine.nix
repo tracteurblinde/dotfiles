@@ -31,6 +31,14 @@
     ];
   };
 
+  programs.nix-ld.libraries = [ config.boot.kernelPackages.nvidia_x11 ];
+
+  networking.firewall = {
+    allowedTCPPorts = [ 80 443 8080 8081 6780 6980 32400 ];
+
+    # if packets are still dropped, they will show up in dmesg
+    logReversePathDrops = true;
+  };
 
   # nacrine is connected to a UPS
   services.apcupsd.enable = true;
@@ -44,13 +52,8 @@
   };
 
   # Docker
-  virtualisation.docker = {
-    enableNvidia = true;
-    rootless = {
-      enable = true;
-      setSocketVariable = true;
-    };
-  };
+  virtualisation.docker.enable = true;
+  hardware.nvidia-container-toolkit.enable = true;
   # Adds all users in the wheel group to the docker group
   users.extraGroups.docker.members = config.nix.settings.trusted-users;
 }
