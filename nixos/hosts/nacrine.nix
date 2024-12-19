@@ -34,7 +34,7 @@
   programs.nix-ld.libraries = [ config.boot.kernelPackages.nvidia_x11 ];
 
   networking.firewall = {
-    allowedTCPPorts = [ 80 443 8080 8081 6780 6980 32400 ];
+    allowedTCPPorts = [ 80 443 8080 8081 8888 6780 6980 32400 ];
 
     # if packets are still dropped, they will show up in dmesg
     logReversePathDrops = true;
